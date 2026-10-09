@@ -1,0 +1,29 @@
+# Local configuration and secrets
+/connect.php
+*.local.php
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local analysis, backups and runtime data
+/.analysis/
+/backups/
+/down/
+*.log
+*.tmp
+*.bak
+*.pid
+/node_modules/
+/vendor/
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated or private database dumps; migrations stay tracked
+*.sql
+!/sql/migrations/*.sql

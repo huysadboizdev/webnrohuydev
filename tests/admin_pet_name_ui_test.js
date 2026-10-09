@@ -1,0 +1,23 @@
+const fs = require('fs');
+const vm = require('vm');
+const assert = require('assert');
+const source = fs.readFileSync(__dirname + '/../admin/player_detail.php', 'utf8');
+assert(/<input[^>]*id="petName"[^>]*\breadonly\b/.test(source.replace(/<\?[\s\S]*?\?>/g, '')), 'name field must be read only');
+const start = source.indexOf('function savePet(e)');
+const end = source.indexOf('// Change Account Password', start);
+const script = source.slice(start, end).replace(/<\?=\s*\(int\)\$pet_data\['type'\]\s*\?>/g, '4');
+const values = {petType:'4',petName:'Forged name',petPower:'64250000243',petTiemNang:'100',petHpg:'400000',petMpg:'400000',petDameg:'20000',petSkill1:'2',petSkill2:'1',petSkill3:'8',petSkill4:'13'};
+let sent;
+const context = {PLAYER_ID:1368, document:{getElementById:id=>({value:values[id]})},
+    adminCommandFetch:(url,options)=>{sent=JSON.parse(options.body);return {then:()=>({then:()=>{}})};}};
+vm.createContext(context);
+vm.runInContext(script, context);
+context.savePet({preventDefault(){}});
+assert(!('pet_name' in sent), 'name must never be sent');
+assert(!('pet_type' in sent), 'stats-only save must preserve stored type/name');
+assert.strictEqual(sent.pet_power, values.petPower, 'power must retain exact digits');
+values.petType='2';
+context.savePet({preventDefault(){}});
+assert.strictEqual(sent.pet_type, '2', 'changed type must be sent');
+assert(!('pet_name' in sent), 'type change cannot send a custom name');
+console.log('pet name read-only, stats-only save and explicit type-change payload PASS');

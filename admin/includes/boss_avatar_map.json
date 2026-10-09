@@ -1,0 +1,2383 @@
+{
+  "id:-32": {
+    "name": "Android 13",
+    "head_id": 252,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2592,
+    "url": "/webgoc2026/admin/assets/boss-icons/2592.png",
+    "phases": {
+      "0": {
+        "head_id": 252,
+        "icon_id": 2592,
+        "url": "/webgoc2026/admin/assets/boss-icons/2592.png"
+      }
+    }
+  },
+  "id:-33": {
+    "name": "Android 14",
+    "head_id": 246,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2529,
+    "url": "/webgoc2026/admin/assets/boss-icons/2529.png",
+    "phases": {
+      "0": {
+        "head_id": 246,
+        "icon_id": 2529,
+        "url": "/webgoc2026/admin/assets/boss-icons/2529.png"
+      }
+    }
+  },
+  "id:-34": {
+    "name": "Android 15",
+    "head_id": 261,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2684,
+    "url": "/webgoc2026/admin/assets/boss-icons/2684.png",
+    "phases": {
+      "0": {
+        "head_id": 261,
+        "icon_id": 2684,
+        "url": "/webgoc2026/admin/assets/boss-icons/2684.png"
+      }
+    }
+  },
+  "id:-30": {
+    "name": "Android 19",
+    "head_id": 249,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2560,
+    "url": "/webgoc2026/admin/assets/boss-icons/2560.png",
+    "phases": {
+      "0": {
+        "head_id": 249,
+        "icon_id": 2560,
+        "url": "/webgoc2026/admin/assets/boss-icons/2560.png"
+      }
+    }
+  },
+  "id:-31": {
+    "name": "Dr.Kôrê",
+    "head_id": 255,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2622,
+    "url": "/webgoc2026/admin/assets/boss-icons/2622.png",
+    "phases": {
+      "0": {
+        "head_id": 255,
+        "icon_id": 2622,
+        "url": "/webgoc2026/admin/assets/boss-icons/2622.png"
+      }
+    }
+  },
+  "id:-37": {
+    "name": "King Kong",
+    "head_id": 243,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2498,
+    "url": "/webgoc2026/admin/assets/boss-icons/2498.png",
+    "phases": {
+      "0": {
+        "head_id": 243,
+        "icon_id": 2498,
+        "url": "/webgoc2026/admin/assets/boss-icons/2498.png"
+      }
+    }
+  },
+  "id:-35": {
+    "name": "Pic",
+    "head_id": 237,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 1348,
+    "url": "/webgoc2026/admin/assets/boss-icons/1348.png",
+    "phases": {
+      "0": {
+        "head_id": 237,
+        "icon_id": 1348,
+        "url": "/webgoc2026/admin/assets/boss-icons/1348.png"
+      }
+    }
+  },
+  "id:-36": {
+    "name": "Poc",
+    "head_id": 240,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2467,
+    "url": "/webgoc2026/admin/assets/boss-icons/2467.png",
+    "phases": {
+      "0": {
+        "head_id": 240,
+        "icon_id": 2467,
+        "url": "/webgoc2026/admin/assets/boss-icons/2467.png"
+      }
+    }
+  },
+  "id:-925": {
+    "name": "Baby",
+    "head_id": 1715,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 14567,
+    "url": "/webgoc2026/admin/assets/boss-icons/14567.png",
+    "phases": {
+      "0": {
+        "head_id": 1715,
+        "icon_id": 14567,
+        "url": "/webgoc2026/admin/assets/boss-icons/14567.png"
+      },
+      "1": {
+        "head_id": 1718,
+        "icon_id": 14569,
+        "url": "/webgoc2026/admin/assets/boss-icons/14569.png"
+      },
+      "2": {
+        "head_id": 1721,
+        "icon_id": 14602,
+        "url": "/webgoc2026/admin/assets/boss-icons/14602.png"
+      }
+    }
+  },
+  "id:-203": {
+    "name": "Black Goku",
+    "head_id": 550,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5141,
+    "url": "/webgoc2026/admin/assets/boss-icons/5141.png",
+    "phases": {
+      "0": {
+        "head_id": 550,
+        "icon_id": 5141,
+        "url": "/webgoc2026/admin/assets/boss-icons/5141.png"
+      },
+      "1": {
+        "head_id": 553,
+        "icon_id": 5173,
+        "url": "/webgoc2026/admin/assets/boss-icons/5173.png"
+      }
+    }
+  },
+  "class:nro.models.boss.Boss_mini.AnTrom": {
+    "name": "Ăn Trộm",
+    "head_id": 201,
+    "kind": "mini",
+    "quest": false,
+    "limited": false,
+    "icon_id": 2254,
+    "url": "/webgoc2026/admin/assets/boss-icons/2254.png",
+    "phases": {
+      "0": {
+        "head_id": 201,
+        "icon_id": 2254,
+        "url": "/webgoc2026/admin/assets/boss-icons/2254.png"
+      }
+    }
+  },
+  "class:nro.models.boss.Boss_mini.MatTroi": {
+    "name": "Mặt Trời",
+    "head_id": 1501,
+    "kind": "mini",
+    "quest": false,
+    "limited": false,
+    "icon_id": 13489,
+    "url": "/webgoc2026/admin/assets/boss-icons/13489.png",
+    "phases": {
+      "0": {
+        "head_id": 1501,
+        "icon_id": 13489,
+        "url": "/webgoc2026/admin/assets/boss-icons/13489.png"
+      }
+    }
+  },
+  "class:nro.models.boss.Boss_mini.Odo": {
+    "name": "Ở Dơ",
+    "head_id": 400,
+    "kind": "mini",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3995,
+    "url": "/webgoc2026/admin/assets/boss-icons/3995.png",
+    "phases": {
+      "0": {
+        "head_id": 400,
+        "icon_id": 3995,
+        "url": "/webgoc2026/admin/assets/boss-icons/3995.png"
+      }
+    }
+  },
+  "id:-386998": {
+    "name": "Rồng Nhí",
+    "head_id": 1662,
+    "kind": "mini",
+    "quest": false,
+    "limited": false,
+    "icon_id": 15070,
+    "url": "/webgoc2026/admin/assets/boss-icons/15070.png",
+    "phases": {
+      "0": {
+        "head_id": 1662,
+        "icon_id": 15070,
+        "url": "/webgoc2026/admin/assets/boss-icons/15070.png"
+      }
+    }
+  },
+  "class:nro.models.boss.Boss_mini.SoiHecQuyn": {
+    "name": "Sói hẹc quyn",
+    "head_id": 394,
+    "kind": "mini",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3933,
+    "url": "/webgoc2026/admin/assets/boss-icons/3933.png",
+    "phases": {
+      "0": {
+        "head_id": 394,
+        "icon_id": 3933,
+        "url": "/webgoc2026/admin/assets/boss-icons/3933.png"
+      }
+    }
+  },
+  "id:-79": {
+    "name": "Virut",
+    "head_id": 651,
+    "kind": "mini",
+    "quest": false,
+    "limited": false,
+    "icon_id": 7146,
+    "url": "/webgoc2026/admin/assets/boss-icons/7146.png",
+    "phases": {
+      "0": {
+        "head_id": 651,
+        "icon_id": 7146,
+        "url": "/webgoc2026/admin/assets/boss-icons/7146.png"
+      }
+    }
+  },
+  "id:-1822": {
+    "name": "Broly",
+    "head_id": 291,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 2893,
+    "url": "/webgoc2026/admin/assets/boss-icons/2893.png",
+    "phases": {
+      "0": {
+        "head_id": 291,
+        "icon_id": 2893,
+        "url": "/webgoc2026/admin/assets/boss-icons/2893.png"
+      }
+    }
+  },
+  "id:-82282": {
+    "name": "Super Broly",
+    "head_id": 294,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 2924,
+    "url": "/webgoc2026/admin/assets/boss-icons/2924.png",
+    "phases": {
+      "0": {
+        "head_id": 294,
+        "icon_id": 2924,
+        "url": "/webgoc2026/admin/assets/boss-icons/2924.png"
+      }
+    }
+  },
+  "id:-101": {
+    "name": "Xên Hoàn Thiện",
+    "head_id": 234,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2407,
+    "url": "/webgoc2026/admin/assets/boss-icons/2407.png",
+    "phases": {
+      "0": {
+        "head_id": 234,
+        "icon_id": 2407,
+        "url": "/webgoc2026/admin/assets/boss-icons/2407.png"
+      },
+      "1": {
+        "head_id": 234,
+        "icon_id": 2407,
+        "url": "/webgoc2026/admin/assets/boss-icons/2407.png"
+      }
+    }
+  },
+  "id:-102": {
+    "name": "Xên con 1",
+    "head_id": 264,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2715,
+    "url": "/webgoc2026/admin/assets/boss-icons/2715.png",
+    "phases": {
+      "0": {
+        "head_id": 264,
+        "icon_id": 2715,
+        "url": "/webgoc2026/admin/assets/boss-icons/2715.png"
+      }
+    }
+  },
+  "id:-103": {
+    "name": "Xên con 2",
+    "head_id": 264,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2715,
+    "url": "/webgoc2026/admin/assets/boss-icons/2715.png",
+    "phases": {
+      "0": {
+        "head_id": 264,
+        "icon_id": 2715,
+        "url": "/webgoc2026/admin/assets/boss-icons/2715.png"
+      }
+    }
+  },
+  "id:-104": {
+    "name": "Xên con 3",
+    "head_id": 264,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2715,
+    "url": "/webgoc2026/admin/assets/boss-icons/2715.png",
+    "phases": {
+      "0": {
+        "head_id": 264,
+        "icon_id": 2715,
+        "url": "/webgoc2026/admin/assets/boss-icons/2715.png"
+      }
+    }
+  },
+  "id:-105": {
+    "name": "Xên con 4",
+    "head_id": 264,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2715,
+    "url": "/webgoc2026/admin/assets/boss-icons/2715.png",
+    "phases": {
+      "0": {
+        "head_id": 264,
+        "icon_id": 2715,
+        "url": "/webgoc2026/admin/assets/boss-icons/2715.png"
+      }
+    }
+  },
+  "id:-106": {
+    "name": "Xên con 5",
+    "head_id": 264,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2715,
+    "url": "/webgoc2026/admin/assets/boss-icons/2715.png",
+    "phases": {
+      "0": {
+        "head_id": 264,
+        "icon_id": 2715,
+        "url": "/webgoc2026/admin/assets/boss-icons/2715.png"
+      }
+    }
+  },
+  "id:-107": {
+    "name": "Xên con 6",
+    "head_id": 264,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2715,
+    "url": "/webgoc2026/admin/assets/boss-icons/2715.png",
+    "phases": {
+      "0": {
+        "head_id": 264,
+        "icon_id": 2715,
+        "url": "/webgoc2026/admin/assets/boss-icons/2715.png"
+      }
+    }
+  },
+  "id:-108": {
+    "name": "Xên con 7",
+    "head_id": 264,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2715,
+    "url": "/webgoc2026/admin/assets/boss-icons/2715.png",
+    "phases": {
+      "0": {
+        "head_id": 264,
+        "icon_id": 2715,
+        "url": "/webgoc2026/admin/assets/boss-icons/2715.png"
+      }
+    }
+  },
+  "id:-100": {
+    "name": "Xên bọ hung",
+    "head_id": 228,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2345,
+    "url": "/webgoc2026/admin/assets/boss-icons/2345.png",
+    "phases": {
+      "0": {
+        "head_id": 228,
+        "icon_id": 2345,
+        "url": "/webgoc2026/admin/assets/boss-icons/2345.png"
+      },
+      "1": {
+        "head_id": 231,
+        "icon_id": 2376,
+        "url": "/webgoc2026/admin/assets/boss-icons/2376.png"
+      },
+      "2": {
+        "head_id": 234,
+        "icon_id": 2407,
+        "url": "/webgoc2026/admin/assets/boss-icons/2407.png"
+      }
+    }
+  },
+  "id:-29": {
+    "name": "Cooler",
+    "head_id": 317,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3145,
+    "url": "/webgoc2026/admin/assets/boss-icons/3145.png",
+    "phases": {
+      "0": {
+        "head_id": 317,
+        "icon_id": 3145,
+        "url": "/webgoc2026/admin/assets/boss-icons/3145.png"
+      },
+      "1": {
+        "head_id": 320,
+        "icon_id": 3177,
+        "url": "/webgoc2026/admin/assets/boss-icons/3177.png"
+      }
+    }
+  },
+  "id:-28": {
+    "name": "Fide đại ca 1",
+    "head_id": 183,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2026,
+    "url": "/webgoc2026/admin/assets/boss-icons/2026.png",
+    "phases": {
+      "0": {
+        "head_id": 183,
+        "icon_id": 2026,
+        "url": "/webgoc2026/admin/assets/boss-icons/2026.png"
+      },
+      "1": {
+        "head_id": 186,
+        "icon_id": 2057,
+        "url": "/webgoc2026/admin/assets/boss-icons/2057.png"
+      },
+      "2": {
+        "head_id": 189,
+        "icon_id": 2088,
+        "url": "/webgoc2026/admin/assets/boss-icons/2088.png"
+      }
+    }
+  },
+  "id:-609": {
+    "name": "$",
+    "head_id": 609,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5723,
+    "url": "/webgoc2026/admin/assets/boss-icons/5723.png",
+    "phases": {
+      "0": {
+        "head_id": 609,
+        "icon_id": 5723,
+        "url": "/webgoc2026/admin/assets/boss-icons/5723.png"
+      }
+    }
+  },
+  "id:-610": {
+    "name": "$",
+    "head_id": 609,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5723,
+    "url": "/webgoc2026/admin/assets/boss-icons/5723.png",
+    "phases": {
+      "0": {
+        "head_id": 609,
+        "icon_id": 5723,
+        "url": "/webgoc2026/admin/assets/boss-icons/5723.png"
+      }
+    }
+  },
+  "id:-611": {
+    "name": "$",
+    "head_id": 609,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5723,
+    "url": "/webgoc2026/admin/assets/boss-icons/5723.png",
+    "phases": {
+      "0": {
+        "head_id": 609,
+        "icon_id": 5723,
+        "url": "/webgoc2026/admin/assets/boss-icons/5723.png"
+      }
+    }
+  },
+  "id:-612": {
+    "name": "$",
+    "head_id": 609,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5723,
+    "url": "/webgoc2026/admin/assets/boss-icons/5723.png",
+    "phases": {
+      "0": {
+        "head_id": 609,
+        "icon_id": 5723,
+        "url": "/webgoc2026/admin/assets/boss-icons/5723.png"
+      }
+    }
+  },
+  "id:-613": {
+    "name": "$",
+    "head_id": 609,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5723,
+    "url": "/webgoc2026/admin/assets/boss-icons/5723.png",
+    "phases": {
+      "0": {
+        "head_id": 609,
+        "icon_id": 5723,
+        "url": "/webgoc2026/admin/assets/boss-icons/5723.png"
+      }
+    }
+  },
+  "id:-502": {
+    "name": "Fide Vàng",
+    "head_id": 502,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 4812,
+    "url": "/webgoc2026/admin/assets/boss-icons/4812.png",
+    "phases": {
+      "0": {
+        "head_id": 502,
+        "icon_id": 4812,
+        "url": "/webgoc2026/admin/assets/boss-icons/4812.png"
+      }
+    }
+  },
+  "class:nro.models.boss.HuntingTrio.HuntingTrioBoss#Basil": {
+    "name": "Basil",
+    "head_id": 745,
+    "kind": "normal",
+    "quest": false,
+    "limited": true,
+    "icon_id": 6914,
+    "url": "/webgoc2026/admin/assets/boss-icons/6914.png",
+    "phases": {
+      "0": {
+        "head_id": 745,
+        "icon_id": 6914,
+        "url": "/webgoc2026/admin/assets/boss-icons/6914.png"
+      }
+    }
+  },
+  "class:nro.models.boss.HuntingTrio.HuntingTrioBoss#Lavender": {
+    "name": "Lavender",
+    "head_id": 748,
+    "kind": "normal",
+    "quest": false,
+    "limited": true,
+    "icon_id": 6916,
+    "url": "/webgoc2026/admin/assets/boss-icons/6916.png",
+    "phases": {
+      "0": {
+        "head_id": 748,
+        "icon_id": 6916,
+        "url": "/webgoc2026/admin/assets/boss-icons/6916.png"
+      }
+    }
+  },
+  "class:nro.models.boss.HuntingTrio.HuntingTrioBoss#Bergamo": {
+    "name": "Bergamo",
+    "head_id": 751,
+    "kind": "normal",
+    "quest": false,
+    "limited": true,
+    "icon_id": 6948,
+    "url": "/webgoc2026/admin/assets/boss-icons/6948.png",
+    "phases": {
+      "0": {
+        "head_id": 751,
+        "icon_id": 6948,
+        "url": "/webgoc2026/admin/assets/boss-icons/6948.png"
+      }
+    }
+  },
+  "class:nro.models.boss.HuntingTrio.HuntingTrioBoss#Pi Láp": {
+    "name": "Pi Láp",
+    "head_id": 612,
+    "kind": "normal",
+    "quest": false,
+    "limited": true,
+    "icon_id": 5827,
+    "url": "/webgoc2026/admin/assets/boss-icons/5827.png",
+    "phases": {
+      "0": {
+        "head_id": 612,
+        "icon_id": 5827,
+        "url": "/webgoc2026/admin/assets/boss-icons/5827.png"
+      }
+    }
+  },
+  "class:nro.models.boss.HuntingTrio.HuntingTrioBoss#Mai": {
+    "name": "Mai",
+    "head_id": 615,
+    "kind": "normal",
+    "quest": false,
+    "limited": true,
+    "icon_id": 5758,
+    "url": "/webgoc2026/admin/assets/boss-icons/5758.png",
+    "phases": {
+      "0": {
+        "head_id": 615,
+        "icon_id": 5758,
+        "url": "/webgoc2026/admin/assets/boss-icons/5758.png"
+      }
+    }
+  },
+  "class:nro.models.boss.HuntingTrio.HuntingTrioBoss#Su": {
+    "name": "Su",
+    "head_id": 618,
+    "kind": "normal",
+    "quest": false,
+    "limited": true,
+    "icon_id": 5789,
+    "url": "/webgoc2026/admin/assets/boss-icons/5789.png",
+    "phases": {
+      "0": {
+        "head_id": 618,
+        "icon_id": 5789,
+        "url": "/webgoc2026/admin/assets/boss-icons/5789.png"
+      }
+    }
+  },
+  "id:-927": {
+    "name": "Mabu mập",
+    "head_id": 297,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 2957,
+    "url": "/webgoc2026/admin/assets/boss-icons/2957.png",
+    "phases": {
+      "0": {
+        "head_id": 297,
+        "icon_id": 2957,
+        "url": "/webgoc2026/admin/assets/boss-icons/2957.png"
+      }
+    }
+  },
+  "id:-234": {
+    "name": "Bui Bui",
+    "head_id": 451,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 4354,
+    "url": "/webgoc2026/admin/assets/boss-icons/4354.png",
+    "phases": {
+      "0": {
+        "head_id": 451,
+        "icon_id": 4354,
+        "url": "/webgoc2026/admin/assets/boss-icons/4354.png"
+      }
+    }
+  },
+  "id:-238": {
+    "name": "Bui Bui",
+    "head_id": 451,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 4354,
+    "url": "/webgoc2026/admin/assets/boss-icons/4354.png",
+    "phases": {
+      "0": {
+        "head_id": 451,
+        "icon_id": 4354,
+        "url": "/webgoc2026/admin/assets/boss-icons/4354.png"
+      }
+    }
+  },
+  "id:-342": {
+    "name": "Ca Đít",
+    "head_id": 103,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1334,
+    "url": "/webgoc2026/admin/assets/boss-icons/1334.png",
+    "phases": {
+      "0": {
+        "head_id": 103,
+        "icon_id": 1334,
+        "url": "/webgoc2026/admin/assets/boss-icons/1334.png"
+      }
+    }
+  },
+  "id:-233": {
+    "name": "Drabura",
+    "head_id": 418,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 4165,
+    "url": "/webgoc2026/admin/assets/boss-icons/4165.png",
+    "phases": {
+      "0": {
+        "head_id": 418,
+        "icon_id": 4165,
+        "url": "/webgoc2026/admin/assets/boss-icons/4165.png"
+      }
+    }
+  },
+  "id:-237": {
+    "name": "Drabura",
+    "head_id": 418,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 4165,
+    "url": "/webgoc2026/admin/assets/boss-icons/4165.png",
+    "phases": {
+      "0": {
+        "head_id": 418,
+        "icon_id": 4165,
+        "url": "/webgoc2026/admin/assets/boss-icons/4165.png"
+      }
+    }
+  },
+  "id:-343": {
+    "name": "Drabura",
+    "head_id": 418,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 4165,
+    "url": "/webgoc2026/admin/assets/boss-icons/4165.png",
+    "phases": {
+      "0": {
+        "head_id": 418,
+        "icon_id": 4165,
+        "url": "/webgoc2026/admin/assets/boss-icons/4165.png"
+      }
+    }
+  },
+  "id:-341": {
+    "name": "Gôku",
+    "head_id": 101,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1330,
+    "url": "/webgoc2026/admin/assets/boss-icons/1330.png",
+    "phases": {
+      "0": {
+        "head_id": 101,
+        "icon_id": 1330,
+        "url": "/webgoc2026/admin/assets/boss-icons/1330.png"
+      }
+    }
+  },
+  "id:-236": {
+    "name": "Mabư",
+    "head_id": 297,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 2957,
+    "url": "/webgoc2026/admin/assets/boss-icons/2957.png",
+    "phases": {
+      "0": {
+        "head_id": 297,
+        "icon_id": 2957,
+        "url": "/webgoc2026/admin/assets/boss-icons/2957.png"
+      }
+    }
+  },
+  "id:-235": {
+    "name": "Ya côn",
+    "head_id": 415,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 4331,
+    "url": "/webgoc2026/admin/assets/boss-icons/4331.png",
+    "phases": {
+      "0": {
+        "head_id": 415,
+        "icon_id": 4331,
+        "url": "/webgoc2026/admin/assets/boss-icons/4331.png"
+      }
+    }
+  },
+  "id:-214": {
+    "name": "Mabư mập",
+    "head_id": 297,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 2957,
+    "url": "/webgoc2026/admin/assets/boss-icons/2957.png",
+    "phases": {
+      "0": {
+        "head_id": 297,
+        "icon_id": 2957,
+        "url": "/webgoc2026/admin/assets/boss-icons/2957.png"
+      },
+      "1": {
+        "head_id": 421,
+        "icon_id": 4197,
+        "url": "/webgoc2026/admin/assets/boss-icons/4197.png"
+      },
+      "2": {
+        "head_id": 424,
+        "icon_id": 4229,
+        "url": "/webgoc2026/admin/assets/boss-icons/4229.png"
+      },
+      "3": {
+        "head_id": 427,
+        "icon_id": 4260,
+        "url": "/webgoc2026/admin/assets/boss-icons/4260.png"
+      },
+      "4": {
+        "head_id": 439,
+        "icon_id": 4300,
+        "url": "/webgoc2026/admin/assets/boss-icons/4300.png"
+      }
+    }
+  },
+  "id:-348": {
+    "name": "Super Bư",
+    "head_id": 421,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 4197,
+    "url": "/webgoc2026/admin/assets/boss-icons/4197.png",
+    "phases": {
+      "0": {
+        "head_id": 421,
+        "icon_id": 4197,
+        "url": "/webgoc2026/admin/assets/boss-icons/4197.png"
+      }
+    }
+  },
+  "id:-20": {
+    "name": "Kuku",
+    "head_id": 159,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 1778,
+    "url": "/webgoc2026/admin/assets/boss-icons/1778.png",
+    "phases": {
+      "0": {
+        "head_id": 159,
+        "icon_id": 1778,
+        "url": "/webgoc2026/admin/assets/boss-icons/1778.png"
+      }
+    }
+  },
+  "id:-21": {
+    "name": "Mập Đầu Đinh",
+    "head_id": 165,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 1840,
+    "url": "/webgoc2026/admin/assets/boss-icons/1840.png",
+    "phases": {
+      "0": {
+        "head_id": 165,
+        "icon_id": 1840,
+        "url": "/webgoc2026/admin/assets/boss-icons/1840.png"
+      }
+    }
+  },
+  "id:-22": {
+    "name": "Rambo",
+    "head_id": 162,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 1809,
+    "url": "/webgoc2026/admin/assets/boss-icons/1809.png",
+    "phases": {
+      "0": {
+        "head_id": 162,
+        "icon_id": 1809,
+        "url": "/webgoc2026/admin/assets/boss-icons/1809.png"
+      }
+    }
+  },
+  "class:nro.models.boss.Tau_PayPay.TaoPaiPai": {
+    "name": "Tàu Pảy Pảy",
+    "head_id": 338,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3340,
+    "url": "/webgoc2026/admin/assets/boss-icons/3340.png",
+    "phases": {
+      "0": {
+        "head_id": 338,
+        "icon_id": 3340,
+        "url": "/webgoc2026/admin/assets/boss-icons/3340.png"
+      }
+    }
+  },
+  "id:-6": {
+    "name": "Trung úy Xanh Lơ",
+    "head_id": 135,
+    "kind": "dungeon",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1495,
+    "url": "/webgoc2026/admin/assets/boss-icons/1495.png",
+    "phases": {
+      "0": {
+        "head_id": 135,
+        "icon_id": 1495,
+        "url": "/webgoc2026/admin/assets/boss-icons/1495.png"
+      }
+    }
+  },
+  "id:-203999": {
+    "name": "Cumber",
+    "head_id": 1254,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 11379,
+    "url": "/webgoc2026/admin/assets/boss-icons/11379.png",
+    "phases": {
+      "0": {
+        "head_id": 1254,
+        "icon_id": 11379,
+        "url": "/webgoc2026/admin/assets/boss-icons/11379.png"
+      },
+      "1": {
+        "head_id": 1257,
+        "icon_id": 11410,
+        "url": "/webgoc2026/admin/assets/boss-icons/11410.png"
+      }
+    }
+  },
+  "id:-80": {
+    "name": "Cha pa",
+    "head_id": 362,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3589,
+    "url": "/webgoc2026/admin/assets/boss-icons/3589.png",
+    "phases": {
+      "0": {
+        "head_id": 362,
+        "icon_id": 3589,
+        "url": "/webgoc2026/admin/assets/boss-icons/3589.png"
+      }
+    }
+  },
+  "id:-82": {
+    "name": "Chan xư",
+    "head_id": 371,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3682,
+    "url": "/webgoc2026/admin/assets/boss-icons/3682.png",
+    "phases": {
+      "0": {
+        "head_id": 371,
+        "icon_id": 3682,
+        "url": "/webgoc2026/admin/assets/boss-icons/3682.png"
+      }
+    }
+  },
+  "id:-85": {
+    "name": "Jacky Chun",
+    "head_id": 356,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3527,
+    "url": "/webgoc2026/admin/assets/boss-icons/3527.png",
+    "phases": {
+      "0": {
+        "head_id": 356,
+        "icon_id": 3527,
+        "url": "/webgoc2026/admin/assets/boss-icons/3527.png"
+      }
+    }
+  },
+  "id:-87": {
+    "name": "Liu Liu",
+    "head_id": 397,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3964,
+    "url": "/webgoc2026/admin/assets/boss-icons/3964.png",
+    "phases": {
+      "0": {
+        "head_id": 397,
+        "icon_id": 3964,
+        "url": "/webgoc2026/admin/assets/boss-icons/3964.png"
+      }
+    }
+  },
+  "id:-78": {
+    "name": "Ở dơ",
+    "head_id": 400,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3995,
+    "url": "/webgoc2026/admin/assets/boss-icons/3995.png",
+    "phases": {
+      "0": {
+        "head_id": 400,
+        "icon_id": 3995,
+        "url": "/webgoc2026/admin/assets/boss-icons/3995.png"
+      }
+    }
+  },
+  "id:-92": {
+    "name": "PôCôLô",
+    "head_id": 9,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 121,
+    "url": "/webgoc2026/admin/assets/boss-icons/121.png",
+    "phases": {
+      "0": {
+        "head_id": 9,
+        "icon_id": 121,
+        "url": "/webgoc2026/admin/assets/boss-icons/121.png"
+      }
+    }
+  },
+  "id:-81": {
+    "name": "Pon put",
+    "head_id": 365,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3620,
+    "url": "/webgoc2026/admin/assets/boss-icons/3620.png",
+    "phases": {
+      "0": {
+        "head_id": 365,
+        "icon_id": 3620,
+        "url": "/webgoc2026/admin/assets/boss-icons/3620.png"
+      }
+    }
+  },
+  "id:-77": {
+    "name": "Sói hẹc quyn",
+    "head_id": 394,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3933,
+    "url": "/webgoc2026/admin/assets/boss-icons/3933.png",
+    "phases": {
+      "0": {
+        "head_id": 394,
+        "icon_id": 3933,
+        "url": "/webgoc2026/admin/assets/boss-icons/3933.png"
+      }
+    }
+  },
+  "id:-83": {
+    "name": "Tàu Pảy Pảy",
+    "head_id": 92,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1210,
+    "url": "/webgoc2026/admin/assets/boss-icons/1210.png",
+    "phases": {
+      "0": {
+        "head_id": 92,
+        "icon_id": 1210,
+        "url": "/webgoc2026/admin/assets/boss-icons/1210.png"
+      }
+    }
+  },
+  "id:-86": {
+    "name": "Thiên xin hăng",
+    "head_id": 368,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3651,
+    "url": "/webgoc2026/admin/assets/boss-icons/3651.png",
+    "phases": {
+      "0": {
+        "head_id": 368,
+        "icon_id": 3651,
+        "url": "/webgoc2026/admin/assets/boss-icons/3651.png"
+      }
+    }
+  },
+  "class:nro.models.boss.dai_hoi_vo_thuat.ThienXinHangClone": {
+    "name": "Thiên xin hăng",
+    "head_id": 368,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3651,
+    "url": "/webgoc2026/admin/assets/boss-icons/3651.png",
+    "phases": {
+      "0": {
+        "head_id": 368,
+        "icon_id": 3651,
+        "url": "/webgoc2026/admin/assets/boss-icons/3651.png"
+      }
+    }
+  },
+  "class:nro.models.boss.dai_hoi_vo_thuat.Xinbato": {
+    "name": "Xinbatô",
+    "head_id": 359,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3558,
+    "url": "/webgoc2026/admin/assets/boss-icons/3558.png",
+    "phases": {
+      "0": {
+        "head_id": 359,
+        "icon_id": 3558,
+        "url": "/webgoc2026/admin/assets/boss-icons/3558.png"
+      }
+    }
+  },
+  "id:-84": {
+    "name": "Yamcha",
+    "head_id": 374,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3713,
+    "url": "/webgoc2026/admin/assets/boss-icons/3713.png",
+    "phases": {
+      "0": {
+        "head_id": 374,
+        "icon_id": 3713,
+        "url": "/webgoc2026/admin/assets/boss-icons/3713.png"
+      }
+    }
+  },
+  "id:-7": {
+    "name": "Ninja Áo Tím",
+    "head_id": 123,
+    "kind": "dungeon",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1423,
+    "url": "/webgoc2026/admin/assets/boss-icons/1423.png",
+    "phases": {
+      "0": {
+        "head_id": 123,
+        "icon_id": 1423,
+        "url": "/webgoc2026/admin/assets/boss-icons/1423.png"
+      }
+    }
+  },
+  "class:nro.models.boss.doanh_trai.NinjaClone": {
+    "name": "Ninja Áo Tím",
+    "head_id": 123,
+    "kind": "dungeon",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1423,
+    "url": "/webgoc2026/admin/assets/boss-icons/1423.png",
+    "phases": {
+      "0": {
+        "head_id": 123,
+        "icon_id": 1423,
+        "url": "/webgoc2026/admin/assets/boss-icons/1423.png"
+      }
+    }
+  },
+  "class:nro.models.boss.doanh_trai.RobotVeSi": {
+    "name": "Rôbốt Vệ Sĩ 0",
+    "head_id": 138,
+    "kind": "dungeon",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1523,
+    "url": "/webgoc2026/admin/assets/boss-icons/1523.png",
+    "phases": {
+      "0": {
+        "head_id": 138,
+        "icon_id": 1523,
+        "url": "/webgoc2026/admin/assets/boss-icons/1523.png"
+      }
+    }
+  },
+  "id:-5": {
+    "name": "Trung uý Thép",
+    "head_id": 129,
+    "kind": "dungeon",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1456,
+    "url": "/webgoc2026/admin/assets/boss-icons/1456.png",
+    "phases": {
+      "0": {
+        "head_id": 129,
+        "icon_id": 1456,
+        "url": "/webgoc2026/admin/assets/boss-icons/1456.png"
+      }
+    }
+  },
+  "id:-4": {
+    "name": "Trung uý Trắng",
+    "head_id": 141,
+    "kind": "dungeon",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1550,
+    "url": "/webgoc2026/admin/assets/boss-icons/1550.png",
+    "phases": {
+      "0": {
+        "head_id": 141,
+        "icon_id": 1550,
+        "url": "/webgoc2026/admin/assets/boss-icons/1550.png"
+      }
+    }
+  },
+  "class:nro.models.boss.doanh_trai.TrungUyXanhLo": {
+    "name": "Trung uý Xanh Lơ",
+    "head_id": 135,
+    "kind": "dungeon",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1495,
+    "url": "/webgoc2026/admin/assets/boss-icons/1495.png",
+    "phases": {
+      "0": {
+        "head_id": 135,
+        "icon_id": 1495,
+        "url": "/webgoc2026/admin/assets/boss-icons/1495.png"
+      }
+    }
+  },
+  "id:-351": {
+    "name": "Bí ma",
+    "head_id": 760,
+    "kind": "event",
+    "quest": false,
+    "limited": true,
+    "icon_id": 7060,
+    "url": "/webgoc2026/admin/assets/boss-icons/7060.png",
+    "phases": {
+      "0": {
+        "head_id": 760,
+        "icon_id": 7060,
+        "url": "/webgoc2026/admin/assets/boss-icons/7060.png"
+      }
+    }
+  },
+  "id:-350": {
+    "name": "Dơi",
+    "head_id": 654,
+    "kind": "event",
+    "quest": false,
+    "limited": true,
+    "icon_id": 6098,
+    "url": "/webgoc2026/admin/assets/boss-icons/6098.png",
+    "phases": {
+      "0": {
+        "head_id": 654,
+        "icon_id": 6098,
+        "url": "/webgoc2026/admin/assets/boss-icons/6098.png"
+      }
+    }
+  },
+  "id:-349": {
+    "name": "Ma trơi",
+    "head_id": 651,
+    "kind": "event",
+    "quest": false,
+    "limited": true,
+    "icon_id": 6097,
+    "url": "/webgoc2026/admin/assets/boss-icons/6097.png",
+    "phases": {
+      "0": {
+        "head_id": 651,
+        "icon_id": 6097,
+        "url": "/webgoc2026/admin/assets/boss-icons/6097.png"
+      }
+    }
+  },
+  "id:-354": {
+    "name": "Sơn Tinh",
+    "head_id": 1683,
+    "kind": "event",
+    "quest": false,
+    "limited": true,
+    "icon_id": 15132,
+    "url": "/webgoc2026/admin/assets/boss-icons/15132.png",
+    "phases": {
+      "0": {
+        "head_id": 1683,
+        "icon_id": 15132,
+        "url": "/webgoc2026/admin/assets/boss-icons/15132.png"
+      }
+    }
+  },
+  "id:-355": {
+    "name": "Thủy Tinh",
+    "head_id": 1686,
+    "kind": "event",
+    "quest": false,
+    "limited": true,
+    "icon_id": 15165,
+    "url": "/webgoc2026/admin/assets/boss-icons/15165.png",
+    "phases": {
+      "0": {
+        "head_id": 1686,
+        "icon_id": 15165,
+        "url": "/webgoc2026/admin/assets/boss-icons/15165.png"
+      }
+    }
+  },
+  "id:-353": {
+    "name": "Ông già Noel",
+    "head_id": 657,
+    "kind": "event",
+    "quest": false,
+    "limited": false,
+    "icon_id": 6111,
+    "url": "/webgoc2026/admin/assets/boss-icons/6111.png",
+    "phases": {
+      "0": {
+        "head_id": 657,
+        "icon_id": 6111,
+        "url": "/webgoc2026/admin/assets/boss-icons/6111.png"
+      }
+    }
+  },
+  "class:nro.models.boss.event_tet.LanCon": {
+    "name": "Lân con",
+    "head_id": 763,
+    "kind": "event",
+    "quest": false,
+    "limited": false,
+    "icon_id": 7077,
+    "url": "/webgoc2026/admin/assets/boss-icons/7077.png",
+    "phases": {
+      "0": {
+        "head_id": 763,
+        "icon_id": 7077,
+        "url": "/webgoc2026/admin/assets/boss-icons/7077.png"
+      }
+    }
+  },
+  "id:-344": {
+    "name": "Khỉ đột",
+    "head_id": 198,
+    "kind": "event",
+    "quest": false,
+    "limited": false,
+    "icon_id": 2238,
+    "url": "/webgoc2026/admin/assets/boss-icons/2238.png",
+    "phases": {
+      "0": {
+        "head_id": 198,
+        "icon_id": 2238,
+        "url": "/webgoc2026/admin/assets/boss-icons/2238.png"
+      }
+    }
+  },
+  "id:-345": {
+    "name": "Nguyệt thần",
+    "head_id": 2060,
+    "kind": "event",
+    "quest": false,
+    "limited": true,
+    "icon_id": 12865,
+    "url": "/webgoc2026/admin/assets/boss-icons/12865.png",
+    "phases": {
+      "0": {
+        "head_id": 2060,
+        "icon_id": 12865,
+        "url": "/webgoc2026/admin/assets/boss-icons/12865.png"
+      }
+    }
+  },
+  "id:-346": {
+    "name": "Nhật thần",
+    "head_id": 2066,
+    "kind": "event",
+    "quest": false,
+    "limited": true,
+    "icon_id": 11040,
+    "url": "/webgoc2026/admin/assets/boss-icons/11040.png",
+    "phases": {
+      "0": {
+        "head_id": 2066,
+        "icon_id": 11040,
+        "url": "/webgoc2026/admin/assets/boss-icons/11040.png"
+      }
+    }
+  },
+  "id:-208": {
+    "name": "Dr Lychee",
+    "head_id": 742,
+    "kind": "dungeon",
+    "quest": false,
+    "limited": false,
+    "icon_id": 6852,
+    "url": "/webgoc2026/admin/assets/boss-icons/6852.png",
+    "phases": {
+      "0": {
+        "head_id": 742,
+        "icon_id": 6852,
+        "url": "/webgoc2026/admin/assets/boss-icons/6852.png"
+      }
+    }
+  },
+  "id:-207": {
+    "name": "",
+    "head_id": 639,
+    "kind": "dungeon",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5964,
+    "url": "/webgoc2026/admin/assets/boss-icons/5964.png",
+    "phases": {
+      "0": {
+        "head_id": 639,
+        "icon_id": 5964,
+        "url": "/webgoc2026/admin/assets/boss-icons/5964.png"
+      }
+    }
+  },
+  "id:-357": {
+    "name": "Karin",
+    "head_id": 89,
+    "kind": "training",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1208,
+    "url": "/webgoc2026/admin/assets/boss-icons/1208.png",
+    "phases": {
+      "0": {
+        "head_id": 89,
+        "icon_id": 1208,
+        "url": "/webgoc2026/admin/assets/boss-icons/1208.png"
+      }
+    }
+  },
+  "id:-361": {
+    "name": "Khỉ Bubbles",
+    "head_id": 95,
+    "kind": "training",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1268,
+    "url": "/webgoc2026/admin/assets/boss-icons/1268.png",
+    "phases": {
+      "0": {
+        "head_id": 95,
+        "icon_id": 1268,
+        "url": "/webgoc2026/admin/assets/boss-icons/1268.png"
+      }
+    }
+  },
+  "id:-359": {
+    "name": "Mr.PôPô",
+    "head_id": 77,
+    "kind": "training",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1104,
+    "url": "/webgoc2026/admin/assets/boss-icons/1104.png",
+    "phases": {
+      "0": {
+        "head_id": 77,
+        "icon_id": 1104,
+        "url": "/webgoc2026/admin/assets/boss-icons/1104.png"
+      }
+    }
+  },
+  "id:-309": {
+    "name": "Tàu Pảy Pảy",
+    "head_id": 92,
+    "kind": "training",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1210,
+    "url": "/webgoc2026/admin/assets/boss-icons/1210.png",
+    "phases": {
+      "0": {
+        "head_id": 92,
+        "icon_id": 1210,
+        "url": "/webgoc2026/admin/assets/boss-icons/1210.png"
+      }
+    }
+  },
+  "id:-362": {
+    "name": "Thần Vũ Trụ",
+    "head_id": 98,
+    "kind": "training",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1299,
+    "url": "/webgoc2026/admin/assets/boss-icons/1299.png",
+    "phases": {
+      "0": {
+        "head_id": 98,
+        "icon_id": 1299,
+        "url": "/webgoc2026/admin/assets/boss-icons/1299.png"
+      }
+    }
+  },
+  "id:-360": {
+    "name": "Thượng đế",
+    "head_id": 86,
+    "kind": "training",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1175,
+    "url": "/webgoc2026/admin/assets/boss-icons/1175.png",
+    "phases": {
+      "0": {
+        "head_id": 86,
+        "icon_id": 1175,
+        "url": "/webgoc2026/admin/assets/boss-icons/1175.png"
+      }
+    }
+  },
+  "id:-363": {
+    "name": "Tổ sư Kaio",
+    "head_id": 448,
+    "kind": "training",
+    "quest": false,
+    "limited": false,
+    "icon_id": 4341,
+    "url": "/webgoc2026/admin/assets/boss-icons/4341.png",
+    "phases": {
+      "0": {
+        "head_id": 448,
+        "icon_id": 4341,
+        "url": "/webgoc2026/admin/assets/boss-icons/4341.png"
+      }
+    }
+  },
+  "id:-364": {
+    "name": "Whis",
+    "head_id": 838,
+    "kind": "training",
+    "quest": false,
+    "limited": false,
+    "icon_id": 7679,
+    "url": "/webgoc2026/admin/assets/boss-icons/7679.png",
+    "phases": {
+      "0": {
+        "head_id": 838,
+        "icon_id": 7679,
+        "url": "/webgoc2026/admin/assets/boss-icons/7679.png"
+      }
+    }
+  },
+  "id:-358": {
+    "name": "Yajirô",
+    "head_id": 77,
+    "kind": "training",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1104,
+    "url": "/webgoc2026/admin/assets/boss-icons/1104.png",
+    "phases": {
+      "0": {
+        "head_id": 77,
+        "icon_id": 1104,
+        "url": "/webgoc2026/admin/assets/boss-icons/1104.png"
+      }
+    }
+  },
+  "id:-340": {
+    "name": "Ma vương Pôcôlô",
+    "head_id": 739,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 6815,
+    "url": "/webgoc2026/admin/assets/boss-icons/6815.png",
+    "phases": {
+      "0": {
+        "head_id": 739,
+        "icon_id": 6815,
+        "url": "/webgoc2026/admin/assets/boss-icons/6815.png"
+      }
+    }
+  },
+  "class:nro.models.boss.nhan_ban.NhanBan": {
+    "name": "NhanBan",
+    "head_id": 0,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "representative": true,
+    "icon_id": 17,
+    "url": "/webgoc2026/admin/assets/boss-icons/17.png",
+    "phases": {
+      "0": {
+        "head_id": 0,
+        "icon_id": 17,
+        "url": "/webgoc2026/admin/assets/boss-icons/17.png"
+      }
+    }
+  },
+  "class:nro.models.boss.sieu_hang.Rival": {
+    "name": "Rival",
+    "head_id": 0,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "representative": true,
+    "icon_id": 17,
+    "url": "/webgoc2026/admin/assets/boss-icons/17.png",
+    "phases": {
+      "0": {
+        "head_id": 0,
+        "icon_id": 17,
+        "url": "/webgoc2026/admin/assets/boss-icons/17.png"
+      }
+    }
+  },
+  "id:-26": {
+    "name": "Số 1",
+    "head_id": 177,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 1964,
+    "url": "/webgoc2026/admin/assets/boss-icons/1964.png",
+    "phases": {
+      "0": {
+        "head_id": 177,
+        "icon_id": 1964,
+        "url": "/webgoc2026/admin/assets/boss-icons/1964.png"
+      }
+    }
+  },
+  "id:-25": {
+    "name": "Số 2",
+    "head_id": 171,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 1902,
+    "url": "/webgoc2026/admin/assets/boss-icons/1902.png",
+    "phases": {
+      "0": {
+        "head_id": 171,
+        "icon_id": 1902,
+        "url": "/webgoc2026/admin/assets/boss-icons/1902.png"
+      }
+    }
+  },
+  "id:-24": {
+    "name": "Số 3",
+    "head_id": 174,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 1933,
+    "url": "/webgoc2026/admin/assets/boss-icons/1933.png",
+    "phases": {
+      "0": {
+        "head_id": 174,
+        "icon_id": 1933,
+        "url": "/webgoc2026/admin/assets/boss-icons/1933.png"
+      }
+    }
+  },
+  "id:-23": {
+    "name": "Số 4",
+    "head_id": 168,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 1871,
+    "url": "/webgoc2026/admin/assets/boss-icons/1871.png",
+    "phases": {
+      "0": {
+        "head_id": 168,
+        "icon_id": 1871,
+        "url": "/webgoc2026/admin/assets/boss-icons/1871.png"
+      }
+    }
+  },
+  "id:-27": {
+    "name": "Tiểu đội trưởng",
+    "head_id": 180,
+    "kind": "normal",
+    "quest": true,
+    "limited": false,
+    "icon_id": 1995,
+    "url": "/webgoc2026/admin/assets/boss-icons/1995.png",
+    "phases": {
+      "0": {
+        "head_id": 180,
+        "icon_id": 1995,
+        "url": "/webgoc2026/admin/assets/boss-icons/1995.png"
+      }
+    }
+  },
+  "id:-314": {
+    "name": "Số 1 Namek",
+    "head_id": 177,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1964,
+    "url": "/webgoc2026/admin/assets/boss-icons/1964.png",
+    "phases": {
+      "0": {
+        "head_id": 177,
+        "icon_id": 1964,
+        "url": "/webgoc2026/admin/assets/boss-icons/1964.png"
+      }
+    }
+  },
+  "id:-313": {
+    "name": "Số 2 Namek",
+    "head_id": 171,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1902,
+    "url": "/webgoc2026/admin/assets/boss-icons/1902.png",
+    "phases": {
+      "0": {
+        "head_id": 171,
+        "icon_id": 1902,
+        "url": "/webgoc2026/admin/assets/boss-icons/1902.png"
+      }
+    }
+  },
+  "id:-312": {
+    "name": "Số 3 Namek",
+    "head_id": 174,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1933,
+    "url": "/webgoc2026/admin/assets/boss-icons/1933.png",
+    "phases": {
+      "0": {
+        "head_id": 174,
+        "icon_id": 1933,
+        "url": "/webgoc2026/admin/assets/boss-icons/1933.png"
+      }
+    }
+  },
+  "id:-311": {
+    "name": "Số 4 Namek",
+    "head_id": 168,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1871,
+    "url": "/webgoc2026/admin/assets/boss-icons/1871.png",
+    "phases": {
+      "0": {
+        "head_id": 168,
+        "icon_id": 1871,
+        "url": "/webgoc2026/admin/assets/boss-icons/1871.png"
+      }
+    }
+  },
+  "id:-315": {
+    "name": "Tiểu đội trưởng Namek",
+    "head_id": 180,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 1995,
+    "url": "/webgoc2026/admin/assets/boss-icons/1995.png",
+    "phases": {
+      "0": {
+        "head_id": 180,
+        "icon_id": 1995,
+        "url": "/webgoc2026/admin/assets/boss-icons/1995.png"
+      }
+    }
+  },
+  "id:-319": {
+    "name": "Bido",
+    "head_id": 335,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3310,
+    "url": "/webgoc2026/admin/assets/boss-icons/3310.png",
+    "phases": {
+      "0": {
+        "head_id": 335,
+        "icon_id": 3310,
+        "url": "/webgoc2026/admin/assets/boss-icons/3310.png"
+      }
+    }
+  },
+  "id:-320": {
+    "name": "Bojack",
+    "head_id": 323,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3183,
+    "url": "/webgoc2026/admin/assets/boss-icons/3183.png",
+    "phases": {
+      "0": {
+        "head_id": 323,
+        "icon_id": 3183,
+        "url": "/webgoc2026/admin/assets/boss-icons/3183.png"
+      },
+      "1": {
+        "head_id": 326,
+        "icon_id": 3215,
+        "url": "/webgoc2026/admin/assets/boss-icons/3215.png"
+      }
+    }
+  },
+  "id:-316": {
+    "name": "Bujin",
+    "head_id": 341,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3390,
+    "url": "/webgoc2026/admin/assets/boss-icons/3390.png",
+    "phases": {
+      "0": {
+        "head_id": 341,
+        "icon_id": 3390,
+        "url": "/webgoc2026/admin/assets/boss-icons/3390.png"
+      }
+    }
+  },
+  "id:-317": {
+    "name": "Kogu",
+    "head_id": 329,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3245,
+    "url": "/webgoc2026/admin/assets/boss-icons/3245.png",
+    "phases": {
+      "0": {
+        "head_id": 329,
+        "icon_id": 3245,
+        "url": "/webgoc2026/admin/assets/boss-icons/3245.png"
+      }
+    }
+  },
+  "id:-321": {
+    "name": "Siêu Bojack",
+    "head_id": 326,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3215,
+    "url": "/webgoc2026/admin/assets/boss-icons/3215.png",
+    "phases": {
+      "0": {
+        "head_id": 326,
+        "icon_id": 3215,
+        "url": "/webgoc2026/admin/assets/boss-icons/3215.png"
+      }
+    }
+  },
+  "id:-318": {
+    "name": "Zangya",
+    "head_id": 332,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3276,
+    "url": "/webgoc2026/admin/assets/boss-icons/3276.png",
+    "phases": {
+      "0": {
+        "head_id": 332,
+        "icon_id": 3276,
+        "url": "/webgoc2026/admin/assets/boss-icons/3276.png"
+      }
+    }
+  },
+  "id:-95": {
+    "name": "Bông băng",
+    "head_id": 350,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3469,
+    "url": "/webgoc2026/admin/assets/boss-icons/3469.png",
+    "phases": {
+      "0": {
+        "head_id": 350,
+        "icon_id": 3469,
+        "url": "/webgoc2026/admin/assets/boss-icons/3469.png"
+      }
+    }
+  },
+  "id:-93": {
+    "name": "Đracula",
+    "head_id": 353,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3496,
+    "url": "/webgoc2026/admin/assets/boss-icons/3496.png",
+    "phases": {
+      "0": {
+        "head_id": 353,
+        "icon_id": 3496,
+        "url": "/webgoc2026/admin/assets/boss-icons/3496.png"
+      }
+    }
+  },
+  "id:-94": {
+    "name": "Người vô hình",
+    "head_id": 377,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3744,
+    "url": "/webgoc2026/admin/assets/boss-icons/3744.png",
+    "phases": {
+      "0": {
+        "head_id": 377,
+        "icon_id": 3744,
+        "url": "/webgoc2026/admin/assets/boss-icons/3744.png"
+      }
+    }
+  },
+  "id:-97": {
+    "name": "Thỏ Đầu Bạc",
+    "head_id": 347,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3438,
+    "url": "/webgoc2026/admin/assets/boss-icons/3438.png",
+    "phases": {
+      "0": {
+        "head_id": 347,
+        "icon_id": 3438,
+        "url": "/webgoc2026/admin/assets/boss-icons/3438.png"
+      }
+    }
+  },
+  "id:-96": {
+    "name": "Vua Quỷ Sa tăng",
+    "head_id": 344,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 3407,
+    "url": "/webgoc2026/admin/assets/boss-icons/3407.png",
+    "phases": {
+      "0": {
+        "head_id": 344,
+        "icon_id": 3407,
+        "url": "/webgoc2026/admin/assets/boss-icons/3407.png"
+      }
+    }
+  },
+  "id:-334": {
+    "name": "Chiến binh-0",
+    "head_id": 528,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5057,
+    "url": "/webgoc2026/admin/assets/boss-icons/5057.png",
+    "phases": {
+      "0": {
+        "head_id": 528,
+        "icon_id": 5057,
+        "url": "/webgoc2026/admin/assets/boss-icons/5057.png"
+      }
+    }
+  },
+  "id:-335": {
+    "name": "Chiến binh-1",
+    "head_id": 528,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5057,
+    "url": "/webgoc2026/admin/assets/boss-icons/5057.png",
+    "phases": {
+      "0": {
+        "head_id": 528,
+        "icon_id": 5057,
+        "url": "/webgoc2026/admin/assets/boss-icons/5057.png"
+      }
+    }
+  },
+  "id:-336": {
+    "name": "Chiến binh-2",
+    "head_id": 528,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5057,
+    "url": "/webgoc2026/admin/assets/boss-icons/5057.png",
+    "phases": {
+      "0": {
+        "head_id": 528,
+        "icon_id": 5057,
+        "url": "/webgoc2026/admin/assets/boss-icons/5057.png"
+      }
+    }
+  },
+  "id:-337": {
+    "name": "Chiến binh-3",
+    "head_id": 528,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5057,
+    "url": "/webgoc2026/admin/assets/boss-icons/5057.png",
+    "phases": {
+      "0": {
+        "head_id": 528,
+        "icon_id": 5057,
+        "url": "/webgoc2026/admin/assets/boss-icons/5057.png"
+      }
+    }
+  },
+  "id:-338": {
+    "name": "Chiến binh-4",
+    "head_id": 528,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5057,
+    "url": "/webgoc2026/admin/assets/boss-icons/5057.png",
+    "phases": {
+      "0": {
+        "head_id": 528,
+        "icon_id": 5057,
+        "url": "/webgoc2026/admin/assets/boss-icons/5057.png"
+      }
+    }
+  },
+  "id:-333": {
+    "name": "Chiến binh-5",
+    "head_id": 528,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5057,
+    "url": "/webgoc2026/admin/assets/boss-icons/5057.png",
+    "phases": {
+      "0": {
+        "head_id": 528,
+        "icon_id": 5057,
+        "url": "/webgoc2026/admin/assets/boss-icons/5057.png"
+      }
+    }
+  },
+  "id:-339": {
+    "name": "Đội trưởng-5",
+    "head_id": 529,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5059,
+    "url": "/webgoc2026/admin/assets/boss-icons/5059.png",
+    "phases": {
+      "0": {
+        "head_id": 529,
+        "icon_id": 5059,
+        "url": "/webgoc2026/admin/assets/boss-icons/5059.png"
+      }
+    }
+  },
+  "id:-328": {
+    "name": "Tân binh-0",
+    "head_id": 527,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5055,
+    "url": "/webgoc2026/admin/assets/boss-icons/5055.png",
+    "phases": {
+      "0": {
+        "head_id": 527,
+        "icon_id": 5055,
+        "url": "/webgoc2026/admin/assets/boss-icons/5055.png"
+      }
+    }
+  },
+  "id:-329": {
+    "name": "Tân binh-1",
+    "head_id": 527,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5055,
+    "url": "/webgoc2026/admin/assets/boss-icons/5055.png",
+    "phases": {
+      "0": {
+        "head_id": 527,
+        "icon_id": 5055,
+        "url": "/webgoc2026/admin/assets/boss-icons/5055.png"
+      }
+    }
+  },
+  "id:-330": {
+    "name": "Tân binh-2",
+    "head_id": 527,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5055,
+    "url": "/webgoc2026/admin/assets/boss-icons/5055.png",
+    "phases": {
+      "0": {
+        "head_id": 527,
+        "icon_id": 5055,
+        "url": "/webgoc2026/admin/assets/boss-icons/5055.png"
+      }
+    }
+  },
+  "id:-331": {
+    "name": "Tân binh-3",
+    "head_id": 527,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5055,
+    "url": "/webgoc2026/admin/assets/boss-icons/5055.png",
+    "phases": {
+      "0": {
+        "head_id": 527,
+        "icon_id": 5055,
+        "url": "/webgoc2026/admin/assets/boss-icons/5055.png"
+      }
+    }
+  },
+  "id:-332": {
+    "name": "Tân binh-4",
+    "head_id": 527,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5055,
+    "url": "/webgoc2026/admin/assets/boss-icons/5055.png",
+    "phases": {
+      "0": {
+        "head_id": 527,
+        "icon_id": 5055,
+        "url": "/webgoc2026/admin/assets/boss-icons/5055.png"
+      }
+    }
+  },
+  "id:-327": {
+    "name": "Tân binh-5",
+    "head_id": 527,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5055,
+    "url": "/webgoc2026/admin/assets/boss-icons/5055.png",
+    "phases": {
+      "0": {
+        "head_id": 527,
+        "icon_id": 5055,
+        "url": "/webgoc2026/admin/assets/boss-icons/5055.png"
+      }
+    }
+  },
+  "id:-322": {
+    "name": "Tập sự-0",
+    "head_id": 526,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5053,
+    "url": "/webgoc2026/admin/assets/boss-icons/5053.png",
+    "phases": {
+      "0": {
+        "head_id": 526,
+        "icon_id": 5053,
+        "url": "/webgoc2026/admin/assets/boss-icons/5053.png"
+      }
+    }
+  },
+  "id:-323": {
+    "name": "Tập sự-1",
+    "head_id": 526,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5053,
+    "url": "/webgoc2026/admin/assets/boss-icons/5053.png",
+    "phases": {
+      "0": {
+        "head_id": 526,
+        "icon_id": 5053,
+        "url": "/webgoc2026/admin/assets/boss-icons/5053.png"
+      }
+    }
+  },
+  "id:-324": {
+    "name": "Tập sự-2",
+    "head_id": 526,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5053,
+    "url": "/webgoc2026/admin/assets/boss-icons/5053.png",
+    "phases": {
+      "0": {
+        "head_id": 526,
+        "icon_id": 5053,
+        "url": "/webgoc2026/admin/assets/boss-icons/5053.png"
+      }
+    }
+  },
+  "id:-325": {
+    "name": "Tập sự-3",
+    "head_id": 526,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5053,
+    "url": "/webgoc2026/admin/assets/boss-icons/5053.png",
+    "phases": {
+      "0": {
+        "head_id": 526,
+        "icon_id": 5053,
+        "url": "/webgoc2026/admin/assets/boss-icons/5053.png"
+      }
+    }
+  },
+  "id:-326": {
+    "name": "Tập sự-4",
+    "head_id": 526,
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5053,
+    "url": "/webgoc2026/admin/assets/boss-icons/5053.png",
+    "phases": {
+      "0": {
+        "head_id": 526,
+        "icon_id": 5053,
+        "url": "/webgoc2026/admin/assets/boss-icons/5053.png"
+      }
+    }
+  },
+  "id:-15": {
+    "name": "Cađích",
+    "head_id": 645,
+    "kind": "dungeon",
+    "quest": false,
+    "limited": false,
+    "icon_id": 6027,
+    "url": "/webgoc2026/admin/assets/boss-icons/6027.png",
+    "phases": {
+      "0": {
+        "head_id": 645,
+        "icon_id": 6027,
+        "url": "/webgoc2026/admin/assets/boss-icons/6027.png"
+      }
+    }
+  },
+  "id:-16": {
+    "name": "Nađíc",
+    "head_id": 648,
+    "kind": "dungeon",
+    "quest": false,
+    "limited": false,
+    "icon_id": 6058,
+    "url": "/webgoc2026/admin/assets/boss-icons/6058.png",
+    "phases": {
+      "0": {
+        "head_id": 648,
+        "icon_id": 6058,
+        "url": "/webgoc2026/admin/assets/boss-icons/6058.png"
+      }
+    }
+  },
+  "class:nro.models.boss_con_duong_ran_doc.SAIBAMEN": {
+    "name": "Số",
+    "head_id": 642,
+    "kind": "dungeon",
+    "quest": false,
+    "limited": false,
+    "icon_id": 5995,
+    "url": "/webgoc2026/admin/assets/boss-icons/5995.png",
+    "phases": {
+      "0": {
+        "head_id": 642,
+        "icon_id": 5995,
+        "url": "/webgoc2026/admin/assets/boss-icons/5995.png"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+const fs=require('node:fs'),assert=require('node:assert/strict');
+const path=__dirname+'/../admin/assets/js/boss-admin.js';
+if(!fs.existsSync(path)){console.error('FAIL: boss admin UI missing');process.exit(1);}
+const ui=require(path);
+assert.equal(ui.runtimeFresh({heartbeat_age:0},0),true);
+assert.equal(ui.runtimeFresh({heartbeat_age:44},0),true);
+assert.equal(ui.runtimeFresh({heartbeat_age:44},1),false);
+assert.equal(ui.runtimeFresh({heartbeat_age:45},0),false);
+assert.equal(ui.runtimeFresh({heartbeat_age:-1},0),false);
+assert.equal(ui.runtimeFresh({heartbeat_age:null},0),false);
+const phase={phase:0,hp:100,damage:1},config={hp:500,damage:10};
+const living=[{phase:0,heartbeat_age:1,max_hp:56,damage:3}];
+assert.deepEqual(ui.phaseDisplay(phase,config,living,0),{hp:56,damage:3,live:true});
+assert.deepEqual(ui.phaseDisplay(phase,config,living,45),{hp:500,damage:10,live:false});
+assert.deepEqual(ui.phaseDisplay({...phase,phase:1},config,living,0),{hp:500,damage:10,live:false});
+const entries=[{key:'a',name:'Quest',quest:true,limited:true},{key:'b',name:'General',quest:false,limited:false}];
+assert.equal(ui.filter(entries,'quest','').length,1);assert.equal(ui.filter(entries,'limited','').length,1);
+assert.equal(ui.filter(entries,'general','').length,1);assert.equal(ui.filter(entries,'all','GENERAL')[0].key,'b');
+assert.equal(ui.chance('1.25'),125);assert.equal(ui.chance('100'),10000);
+assert.throws(()=>ui.chance('0.001'));assert.throws(()=>ui.chance('101'));
+assert.equal(typeof ui.probability,'function','Grouped chance preview missing');
+assert.deepEqual(ui.probability([{group:'a',weight:1,chance_bp:5000},{group:'a',weight:3,chance_bp:5000}],0),{conditional:25,total:12.5});
+assert.deepEqual(ui.options('50:20 30:0'),[{id:50,param:20},{id:30,param:0}]);assert.throws(()=>ui.options('50:1 50:2'));
+const php=fs.readFileSync(__dirname+'/../admin/bosses.php','utf8');
+for(const feature of ['boss_admin_save','verify_csrf_token','boss_admin_catalog.json','boss_admin_audit','bossBoot','bossForm','name="defense"','name="critical"'])assert.ok(php.includes(feature),feature);
+console.log('Boss admin UI contract tests passed');
