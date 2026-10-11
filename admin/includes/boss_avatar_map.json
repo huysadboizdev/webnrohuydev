@@ -2379,5 +2379,133 @@
         "url": "/webgoc2026/admin/assets/boss-icons/5995.png"
       }
     }
+  },
+  "id:-928": {
+    "name": "Zamasu",
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "head_id": 903,
+    "icon_id": 8211,
+    "url": "/webgoc2026/admin/assets/boss-icons/8211.png",
+    "phases": {
+      "0": {
+        "head_id": 903,
+        "icon_id": 8211,
+        "url": "/webgoc2026/admin/assets/boss-icons/8211.png"
+      }
+    }
+  },
+  "id:-929": {
+    "name": "Heart",
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "head_id": 2099,
+    "icon_id": 17200,
+    "url": "/webgoc2026/admin/assets/boss-icons/17200.png",
+    "phases": {
+      "0": {
+        "head_id": 2099,
+        "icon_id": 17200,
+        "url": "/webgoc2026/admin/assets/boss-icons/17200.png"
+      }
+    }
+  },
+  "id:-930": {
+    "name": "Kamin",
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "head_id": 2102,
+    "icon_id": 17265,
+    "url": "/webgoc2026/admin/assets/boss-icons/17265.png",
+    "phases": {
+      "0": {
+        "head_id": 2102,
+        "icon_id": 17265,
+        "url": "/webgoc2026/admin/assets/boss-icons/17265.png"
+      }
+    }
+  },
+  "id:-931": {
+    "name": "Oren",
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "head_id": 2105,
+    "icon_id": 17297,
+    "url": "/webgoc2026/admin/assets/boss-icons/17297.png",
+    "phases": {
+      "0": {
+        "head_id": 2105,
+        "icon_id": 17297,
+        "url": "/webgoc2026/admin/assets/boss-icons/17297.png"
+      }
+    }
+  },
+  "id:-932": {
+    "name": "Beerus",
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "head_id": 2108,
+    "icon_id": 24001,
+    "url": "/webgoc2026/admin/assets/boss-icons/24001.png",
+    "phases": {
+      "0": {
+        "head_id": 2108,
+        "icon_id": 24001,
+        "url": "/webgoc2026/admin/assets/boss-icons/24001.png"
+      }
+    }
+  },
+  "id:-933": {
+    "name": "Whis",
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "head_id": 2111,
+    "icon_id": 24036,
+    "url": "/webgoc2026/admin/assets/boss-icons/24036.png",
+    "phases": {
+      "0": {
+        "head_id": 2111,
+        "icon_id": 24036,
+        "url": "/webgoc2026/admin/assets/boss-icons/24036.png"
+      }
+    }
+  },
+  "id:-934": {
+    "name": "Champa",
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "head_id": 2114,
+    "icon_id": 24041,
+    "url": "/webgoc2026/admin/assets/boss-icons/24041.png",
+    "phases": {
+      "0": {
+        "head_id": 2114,
+        "icon_id": 24041,
+        "url": "/webgoc2026/admin/assets/boss-icons/24041.png"
+      }
+    }
+  },
+  "id:-935": {
+    "name": "Vados",
+    "kind": "normal",
+    "quest": false,
+    "limited": false,
+    "head_id": 2117,
+    "icon_id": 24071,
+    "url": "/webgoc2026/admin/assets/boss-icons/24071.png",
+    "phases": {
+      "0": {
+        "head_id": 2117,
+        "icon_id": 24071,
+        "url": "/webgoc2026/admin/assets/boss-icons/24071.png"
+      }
+    }
   }
 }
