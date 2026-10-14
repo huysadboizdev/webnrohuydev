@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/includes/url_helper.php';
 // admin/auth_guard.php
 // Middleware bảo vệ nghiêm ngặt: Chỉ cho phép tài khoản Role Admin truy cập
 
@@ -98,7 +99,7 @@ if (!$is_admin_verified) {
             <div class="icon-box">🛡️</div>
             <h1>403 - KHU VỰC QUẢN TRỊ</h1>
             <p>Trang web này yêu cầu quyền <strong>Admin</strong> để truy cập. Tài khoản hiện tại của bạn không đủ đặc quyền quản trị viên.</p>
-            <a href="/webgoc2026/" class="btn">Về Trang Chủ</a>
+            <a href="' . rtrim(admin_url(''), '/') . '/" class="btn">Về Trang Chủ</a>
         </div>
     </body>
     </html>';

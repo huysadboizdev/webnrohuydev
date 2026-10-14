@@ -98,7 +98,7 @@ $recent_commands = get_recent_server_commands(8);
             <button type="button" class="btn btn-warning" onclick="triggerLiveSync('RELOAD_BOSS', {})">
                 👹 Nạp Lại Cấu Hình Boss
             </button>
-            <a class="btn btn-outline" href="/webgoc2026/admin/bosses.php">Chỉnh HP/Sức đánh boss</a>
+            <a class="btn btn-outline" href="<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/bosses.php">Chỉnh HP/Sức đánh boss</a>
             <button type="button" class="btn btn-success" onclick="triggerLiveSync('RELOAD_SHOP', {})">
                 🛒 Nạp Lại Shop NPC
             </button>

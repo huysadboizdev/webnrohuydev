@@ -95,7 +95,7 @@ $accounts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
             </div>
             <button type="submit" class="btn btn-primary">🔍 Tìm kiếm</button>
             <?php if ($search !== '' || $filter_role !== ''): ?>
-                <a href="/webgoc2026/admin/accounts.php" class="btn btn-outline">Xóa lọc</a>
+                <a href="<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/accounts.php" class="btn btn-outline">Xóa lọc</a>
             <?php endif; ?>
         </form>
     </div>

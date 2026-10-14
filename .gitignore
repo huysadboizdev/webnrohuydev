@@ -12,6 +12,7 @@
 # Local analysis, backups and runtime data
 /.analysis/
 /backups/
+/Builds/
 /down/
 *.log
 *.tmp

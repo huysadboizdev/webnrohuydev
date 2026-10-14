@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (loading) return;
         loading=true;
         try {
-            const response=await fetch('/webgoc2026/admin/api/events.php',{cache:'no-store'});
+            const response=await fetch(adminUrl('/admin/api/events.php'),{cache:'no-store'});
             const result=await response.json();
             if (!response.ok || result.status!=='success') throw new Error(result.message || 'Không đọc được sự kiện');
             list.replaceChildren();
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     operation.active=true;pending.set(event.event_key,operation);button.disabled=true;
                     message.textContent='Đang chờ máy chủ xử lý. Chưa xác nhận thay đổi trong game.';
                     try {
-                        const response=await adminCommandFetch('/webgoc2026/admin/api/live_sync.php',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({command_type:'EVENT_SET',payload:{event_key:operation.event_key,enabled:operation.enabled,revision:operation.revision}})});
+                        const response=await adminCommandFetch(adminUrl('/admin/api/live_sync.php'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({command_type:'EVENT_SET',payload:{event_key:operation.event_key,enabled:operation.enabled,revision:operation.revision}})});
                         const receipt=await response.json();
                         if (receipt.status!=='queued') pending.delete(event.event_key);
                         message.textContent=receipt.message;

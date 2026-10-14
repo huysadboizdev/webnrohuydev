@@ -11,11 +11,12 @@ $active_tab = $active_tab ?? 'dashboard';
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <meta name="admin-base-url" content="<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>">
     <meta name="admin-csrf-token" content="<?= htmlspecialchars(get_csrf_token(), ENT_QUOTES) ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title><?= htmlspecialchars($page_title) ?> - Ngoc Rong Control Panel</title>
-    <link rel="icon" href="/webgoc2026/favicon-32x32.png" type="image/png">
-    <link rel="stylesheet" href="/webgoc2026/admin/assets/css/admin.css?v=<?= time() ?>">
+    <link rel="icon" href="<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/assets/css/admin.css?v=<?= time() ?>">
 </head>
 <body>
 <div class="admin-layout">

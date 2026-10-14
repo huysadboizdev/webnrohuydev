@@ -75,7 +75,7 @@ function get_planet_name($gender) {
             </div>
             <button type="submit" class="btn btn-primary">🔍 Tìm kiếm</button>
             <?php if ($search !== ''): ?>
-                <a href="/webgoc2026/admin/players.php" class="btn btn-outline">Xóa lọc</a>
+                <a href="<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/players.php" class="btn btn-outline">Xóa lọc</a>
             <?php endif; ?>
         </form>
     </div>
@@ -158,7 +158,7 @@ function get_planet_name($gender) {
                                 <?php endif; ?>
                             </td>
                             <td style="text-align:right; white-space:nowrap;">
-                                <a href="/webgoc2026/admin/player_detail.php?id=<?= (int)$p['id'] ?>" class="btn btn-sm btn-info" style="margin-right:4px;">
+                                <a href="<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/player_detail.php?id=<?= (int)$p['id'] ?>" class="btn btn-sm btn-info" style="margin-right:4px;">
                                     🔍 Soi Toàn Diện
                                 </a>
                                 <button type="button" class="btn btn-sm btn-primary" onclick='openPlayerModal(<?= json_encode($p) ?>)'>

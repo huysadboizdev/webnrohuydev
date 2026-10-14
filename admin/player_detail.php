@@ -10,7 +10,7 @@ $pet_skill_templates=$pet_skill_result?$pet_skill_result->fetch_all(MYSQLI_ASSOC
 
 $player_id = (int)($_GET['id'] ?? 0);
 if ($player_id <= 0) {
-    echo '<div class="card"><div class="card-body" style="text-align:center; padding:50px;"><h2>Không tìm thấy nhân vật</h2><a href="/webgoc2026/admin/players.php" class="btn btn-primary" style="margin-top:15px;">Quay lại danh sách</a></div></div>';
+    echo '<div class="card"><div class="card-body" style="text-align:center; padding:50px;"><h2>Không tìm thấy nhân vật</h2><a href="' . rtrim(admin_url(''), '/') . '/admin/players.php" class="btn btn-primary" style="margin-top:15px;">Quay lại danh sách</a></div></div>';
     require_once __DIR__ . '/includes/footer.php';
     exit();
 }
@@ -26,7 +26,7 @@ $player = $stmt->get_result()->fetch_assoc();
 $stmt->close();
 
 if (!$player) {
-    echo '<div class="card"><div class="card-body" style="text-align:center; padding:50px;"><h2>Nhân vật không tồn tại trong CSDL</h2><a href="/webgoc2026/admin/players.php" class="btn btn-primary" style="margin-top:15px;">Quay lại danh sách</a></div></div>';
+    echo '<div class="card"><div class="card-body" style="text-align:center; padding:50px;"><h2>Nhân vật không tồn tại trong CSDL</h2><a href="' . rtrim(admin_url(''), '/') . '/admin/players.php" class="btn btn-primary" style="margin-top:15px;">Quay lại danh sách</a></div></div>';
     require_once __DIR__ . '/includes/footer.php';
     exit();
 }
@@ -751,7 +751,7 @@ function switchTab(tabId) {
 // Quick Emergency Action
 function triggerAction(actionName) {
     if (!confirm('Xác nhận thực hiện hành động này vào CSDL?')) return;
-    adminCommandFetch('/webgoc2026/admin/api/player_actions.php', {
+    adminCommandFetch('<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/api/player_actions.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ action: actionName, player_id: PLAYER_ID, kick_player: false })
@@ -790,7 +790,7 @@ function saveStats(e) {
     // Gửi POST tới players.php
     const form = document.createElement('form');
     form.method = 'POST';
-    form.action = '/webgoc2026/admin/players.php';
+    form.action = '<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/players.php';
     for (const key in payload) {
         const inp = document.createElement('input');
         inp.type = 'hidden';
@@ -832,7 +832,7 @@ function showItemDetail(item, target) {
 function saveItemQty() {
     if (!activeDetailItem) return;
     const qty = parseInt(document.getElementById('detailItemQtyInput').value, 10);
-    adminCommandFetch('/webgoc2026/admin/api/player_actions.php', {
+    adminCommandFetch('<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/api/player_actions.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -862,7 +862,7 @@ function deleteCurrentDetailItem() {
 }
 
 function deleteItem(target, slotIndex) {
-    adminCommandFetch('/webgoc2026/admin/api/player_actions.php', {
+    adminCommandFetch('<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/api/player_actions.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -895,7 +895,7 @@ function searchGiftItems(q) {
     if (!q || q.trim().length < 1) { box.style.display = 'none'; return; }
 
     giftSearchTimeout = setTimeout(() => {
-        fetch(`/webgoc2026/admin/api/search_items.php?action=items&q=${encodeURIComponent(q)}`, {headers: {'X-CSRF-Token': adminCsrfToken()}})
+        fetch(`<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/api/search_items.php?action=items&q=${encodeURIComponent(q)}`, {headers: {'X-CSRF-Token': adminCsrfToken()}})
             .then(res => res.json())
             .then(data => {
                 if (data.status === 'success' && data.data.length > 0) {
@@ -933,7 +933,7 @@ function submitGiftItem(e) {
     if (preset === '77_50') options.push([77, 50], [30, 0]);
     if (preset === '103_7') options.push([103, 7], [30, 0]);
 
-    adminCommandFetch('/webgoc2026/admin/api/player_actions.php', {
+    adminCommandFetch('<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/api/player_actions.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -962,7 +962,7 @@ function submitGiftItem(e) {
 function jumpToTask() {
     const taskId = document.getElementById('selectTargetTask').value;
     if (!confirm(`Nhảy cóc sang nhiệm vụ #${taskId}?`)) return;
-    adminCommandFetch('/webgoc2026/admin/api/player_actions.php', {
+    adminCommandFetch('<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/api/player_actions.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ action: 'change_task', player_id: PLAYER_ID, task_id: taskId, kick_player: false })
@@ -991,7 +991,7 @@ function updatePetNamePreview() {
 
 function savePet(e) {
     e.preventDefault();
-    adminCommandFetch('/webgoc2026/admin/api/player_actions.php', {
+    adminCommandFetch('<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/api/player_actions.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -1030,7 +1030,7 @@ function changeAccPassword(e) {
 
     const form = document.createElement('form');
     form.method = 'POST';
-    form.action = '/webgoc2026/admin/accounts.php';
+    form.action = '<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/accounts.php';
 
     const act = document.createElement('input'); act.type='hidden'; act.name='action'; act.value='change_password'; form.appendChild(act);
     const id = document.createElement('input'); id.type='hidden'; id.name='account_id'; id.value=accId; form.appendChild(id);
@@ -1063,7 +1063,7 @@ function submitTopup(e) {
         return;
     }
 
-    adminCommandFetch('/webgoc2026/admin/api/player_actions.php', {
+    adminCommandFetch('<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/api/player_actions.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

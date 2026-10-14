@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/url_helper.php';
 // admin/includes/icon_helper.php
 // Quản lý và cung cấp URL icon vật phẩm cho Web Admin Control Panel
 
@@ -9,7 +10,7 @@ if (!defined('ADMIN_ROOT')) {
 function get_item_icon_url($icon_id) {
     $icon_id = (int)$icon_id;
     if ($icon_id < 0) {
-        return '/webgoc2026/favicon-32x32.png';
+        return '' . rtrim(admin_url(''), '/') . '/favicon-32x32.png';
     }
 
     $web_dest_dir = ADMIN_ROOT . '/assets/icons';
@@ -18,7 +19,7 @@ function get_item_icon_url($icon_id) {
     }
 
     $web_icon_file = $web_dest_dir . '/' . $icon_id . '.png';
-    $web_relative_url = '/webgoc2026/admin/assets/icons/' . $icon_id . '.png';
+    $web_relative_url = '' . rtrim(admin_url(''), '/') . '/admin/assets/icons/' . $icon_id . '.png';
 
     if (is_valid_admin_icon($web_icon_file)) {
         return $web_relative_url;
@@ -47,7 +48,7 @@ function get_item_icon_url($icon_id) {
         if (@copy($avatar_small, $web_icon_file) && is_valid_admin_icon($web_icon_file)) return $web_relative_url;
     }
 
-    return '/webgoc2026/favicon-32x32.png';
+    return '' . rtrim(admin_url(''), '/') . '/favicon-32x32.png';
 }
 
 function is_valid_admin_icon($path) {
@@ -64,7 +65,7 @@ function get_boss_avatar_url($bossKey, $headId = null) {
     $icon = $row['icon_id'] ?? null;
     if (is_int($icon) && $icon >= 0 && ($headId === null || (int)$headId === (int)$row['head_id'])) {
         $path = ADMIN_ROOT.'/assets/boss-icons/'.$icon.'.png';
-        if (is_valid_admin_icon($path)) return '/webgoc2026/admin/assets/boss-icons/'.$icon.'.png';
+        if (is_valid_admin_icon($path)) return '' . rtrim(admin_url(''), '/') . '/admin/assets/boss-icons/'.$icon.'.png';
     }
-    return '/webgoc2026/favicon-32x32.png';
+    return '' . rtrim(admin_url(''), '/') . '/favicon-32x32.png';
 }

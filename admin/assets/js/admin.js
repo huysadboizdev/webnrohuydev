@@ -1,3 +1,7 @@
+function adminUrl(path) {
+    const base = document.querySelector('meta[name=admin-base-url]')?.content || '';
+    return base.replace(/\/$/, '') + path;
+}
 // admin/assets/js/admin.js
 // Admin Control Panel Interactive Scripts & Live Sync Bridge
 
@@ -89,7 +93,7 @@ function adminCsrfToken() { return document.querySelector('meta[name="admin-csrf
 async function waitForAdminCommand(commandId, timeoutMs = 120000) {
     const deadline = Date.now() + timeoutMs;
     while (Date.now() < deadline) {
-        const response = await fetch('/webgoc2026/admin/api/live_sync.php?check_id=' + encodeURIComponent(commandId), {headers: {'X-CSRF-Token': adminCsrfToken()}});
+        const response = await fetch(adminUrl('/admin/api/live_sync.php?check_id=') + encodeURIComponent(commandId), {headers: {'X-CSRF-Token': adminCsrfToken()}});
         const result = await response.json();
         if (!response.ok || result.status !== 'success') throw new Error(result.message || 'Cannot read command status');
         if (result.data.status === 'completed') return {status: 'success', command_id: commandId, message: result.data.result_message || 'Đã áp dụng thành công'};
@@ -129,7 +133,7 @@ async function adminCommandFetch(url, options) {
     return {json: async () => final};
 }
 function triggerLiveSync(commandType, payload = {}, callback = null) {
-    return adminCommandFetch('/webgoc2026/admin/api/live_sync.php', {
+    return adminCommandFetch(adminUrl('/admin/api/live_sync.php'), {
         method: 'POST', headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({command_type: commandType, payload})
     }).then(response => response.json()).then(data => {

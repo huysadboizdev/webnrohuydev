@@ -8,6 +8,12 @@ $message='';$configs=[];$audit=[];$commands=[];$runtime=[];$restore=null;$availa
 $live=['fresh'=>false,'age_seconds'=>null,'last_heartbeat'=>null];
 $catalog=json_decode(file_get_contents(__DIR__.'/includes/boss_admin_catalog.json'),true,512,JSON_THROW_ON_ERROR);
 $avatar_map=file_exists(__DIR__.'/includes/boss_avatar_map.json')?json_decode(file_get_contents(__DIR__.'/includes/boss_avatar_map.json'),true):[];
+// The generated catalog stores paths from the local export. Rebase for this deployment.
+array_walk_recursive($avatar_map, static function (&$value, $key) {
+    if ($key === 'url' && is_string($value) && strpos($value, '/webgoc2026/') === 0) {
+        $value = admin_url(substr($value, strlen('/webgoc2026')));
+    }
+});
 
 try{
     if($_SERVER['REQUEST_METHOD']==='POST'){
@@ -59,7 +65,7 @@ foreach($configs as $bykey){
     }
 }
 ?>
-<link rel="stylesheet" href="/webgoc2026/admin/assets/css/boss-admin.css?v=<?= time() ?>">
+<link rel="stylesheet" href="<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/assets/css/boss-admin.css?v=<?= time() ?>">
 
 <div class="boss-hero">
     <div class="boss-hero-title">
@@ -151,7 +157,7 @@ foreach($configs as $bykey){
     <div class="boss-modal-head">
         <div class="boss-modal-head-left">
             <div class="boss-modal-avatar">
-                <img id="bossModalAvatar" src="/webgoc2026/favicon-32x32.png" alt="Avatar Boss">
+                <img id="bossModalAvatar" src="<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/favicon-32x32.png" alt="Avatar Boss">
             </div>
             <div>
                 <h2 id="bossTitle" class="boss-modal-title"></h2>
@@ -374,5 +380,5 @@ foreach($configs as $bykey){
     'message'=>$message,
     'is_error'=>($message!=='' && empty($queued_command_id))
 ],JSON_HEX_TAG|JSON_HEX_AMP|JSON_HEX_APOS|JSON_HEX_QUOT|JSON_THROW_ON_ERROR) ?></script>
-<script src="/webgoc2026/admin/assets/js/boss-admin.js?v=<?= time() ?>"></script>
+<script src="<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/assets/js/boss-admin.js?v=<?= time() ?>"></script>
 <?php require_once __DIR__.'/includes/footer.php'; ?>

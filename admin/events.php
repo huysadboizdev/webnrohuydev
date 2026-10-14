@@ -11,5 +11,5 @@ require_once __DIR__.'/includes/header.php';
         <div id="eventList"></div>
     </div>
 </div>
-<script defer src="/webgoc2026/admin/assets/js/events.js?v=<?= filemtime(__DIR__.'/assets/js/events.js') ?>"></script>
+<script defer src="<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/assets/js/events.js?v=<?= filemtime(__DIR__.'/assets/js/events.js') ?>"></script>
 <?php require_once __DIR__.'/includes/footer.php'; ?>

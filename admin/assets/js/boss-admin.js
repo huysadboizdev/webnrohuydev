@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const getAvatarUrl = bossKey => {
         const url = boot.avatars?.[bossKey]?.url;
         if (url) return url;
-        return '/webgoc2026/favicon-32x32.png';
+        return adminUrl('/favicon-32x32.png');
     };
 
     const isCustomConfig = c => {
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const img = node('img');
                 img.src = getAvatarUrl(e.key);
                 img.alt = e.name;
-                img.onerror = () => { img.src = '/webgoc2026/favicon-32x32.png'; };
+                img.onerror = () => { img.src = adminUrl('/favicon-32x32.png'); };
                 avatarWrap.append(img);
                 cell.append(avatarWrap);
 
@@ -476,7 +476,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const avatarEl = el('bossModalAvatar');
         if (avatarEl) {
             avatarEl.src = getAvatarUrl(e.key);
-            avatarEl.onerror = () => { avatarEl.src = '/webgoc2026/favicon-32x32.png'; };
+            avatarEl.onerror = () => { avatarEl.src = adminUrl('/favicon-32x32.png'); };
         }
         el('bossTitle').textContent = e.name;
         el('bossKey').textContent = `${e.key} · ${labels(e)} · ${e.class_name}`;
@@ -565,7 +565,7 @@ document.addEventListener('DOMContentLoaded', () => {
             results.replaceChildren();
             timer = setTimeout(async () => {
                 try {
-                    const response = await fetch(`/webgoc2026/admin/api/search_items.php?action=items&q=${encodeURIComponent(search.value)}&limit=20`, {
+                    const response = await fetch(`${adminUrl('')}/admin/api/search_items.php?action=items&q=${encodeURIComponent(search.value)}&limit=20`, {
                         headers: { 'X-CSRF-Token': adminCsrfToken() }
                     });
                     const data = await response.json();
@@ -613,7 +613,7 @@ document.addEventListener('DOMContentLoaded', () => {
             optionResults.replaceChildren();
             optionTimer = setTimeout(async () => {
                 try {
-                    const res = await fetch(`/webgoc2026/admin/api/search_items.php?action=options&q=${encodeURIComponent(optionSearch.value)}&limit=20`, {
+                    const res = await fetch(`${adminUrl('')}/admin/api/search_items.php?action=options&q=${encodeURIComponent(optionSearch.value)}&limit=20`, {
                         headers: { 'X-CSRF-Token': adminCsrfToken() }
                     });
                     const data = await res.json();
@@ -756,7 +756,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function refreshStatus() {
         try {
             if (document.hidden) return;
-            const response = await fetch('/webgoc2026/admin/api/boss_status.php', {
+            const response = await fetch(adminUrl('/admin/api/boss_status.php'), {
                 cache: 'no-store', signal: AbortSignal.timeout(10000)
             });
             const result = await response.json();
