@@ -15,6 +15,11 @@ foreach([[json_encode($old)],[null],['broken']] as $claims){
 }
 // An item removed from the current catalog remains protected by delivered history.
 try{giftcode_assert_update_options([['id'=>1,'quantity'=>1,'options'=>[]]],[json_encode($old)]);throw new RuntimeException('readded option change accepted');}catch(InvalidArgumentException $e){}
+$historical441=[['id'=>441,'quantity'=>1,'options'=>[['id'=>30,'param'=>0]]]];
+giftcode_assert_update_options($historical441,[json_encode($historical441)]);
+$historical441WithExtra=[['id'=>441,'quantity'=>1,'options'=>[['id'=>30,'param'=>0],['id'=>95,'param'=>5]]]];
+giftcode_assert_update_options($historical441WithExtra,[json_encode($historical441)]);
+try{giftcode_assert_update_options([['id'=>441,'quantity'=>1,'options'=>[]]],[json_encode($historical441)]);throw new RuntimeException('changed #441 options accepted');}catch(InvalidArgumentException $e){check_update(str_contains($e->getMessage(),'Cần giữ: #30:0; form đang gửi: không có option'),'option lock should explain required and submitted options');}
 $row=['code'=>'ABC','count_left'=>2,'detail'=>json_encode($old),'expired'=>'2037-01-01 00:00:00'];
 $fp=giftcode_fingerprint($row);$row['count_left']=1;
 check_update($fp!==giftcode_fingerprint($row),'quota mutation must invalidate form');

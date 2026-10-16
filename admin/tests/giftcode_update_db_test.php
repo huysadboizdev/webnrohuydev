@@ -14,7 +14,7 @@ try{
  $conn->query('CREATE TABLE item_template(id INT PRIMARY KEY,type INT NOT NULL) ENGINE=InnoDB');
  $conn->query('CREATE TABLE item_option_template(id INT PRIMARY KEY) ENGINE=InnoDB');
  $conn->query("CREATE TABLE server_command_queue(id INT AUTO_INCREMENT PRIMARY KEY,command_type VARCHAR(100),payload LONGTEXT,status VARCHAR(30),created_by VARCHAR(100),request_id VARCHAR(64) UNIQUE,actor_account_id INT) ENGINE=InnoDB");
- $conn->query('INSERT INTO item_template VALUES(1,0),(2,0),(3,13)');$conn->query('INSERT INTO item_option_template VALUES(0),(30),(50)');
+ $conn->query('INSERT INTO item_template VALUES(1,0),(2,0),(3,13)');$conn->query('INSERT INTO item_option_template VALUES(0),(30),(50),(95)');
  $logged_user_id=123;$logged_username='isolated-test';
  $old=giftcode_validate('TEST',2,'2037-01-01T00:00','[{"id":1,"quantity":10,"options":[{"id":0,"param":0},{"id":50,"param":20}]}]');
  $request=admin_new_request_id();$payload=['code'=>'TEST'];
@@ -22,13 +22,21 @@ try{
  $row=$conn->query('SELECT * FROM giftcode')->fetch_assoc();$id=(int)$row['id'];$fp=giftcode_fingerprint($row);
  db_check(admin_catalog_transaction(fn()=>throw new RuntimeException('idempotent retry reapplied mutation'),'RELOAD_GIFTCODE',$payload,$request)===$queued,'retry must return original queue');
  $q=$conn->prepare('INSERT INTO giftcode_claim VALUES(1,?,?)');$q->bind_param('ss',$old['code'],$old['detail']);$q->execute();$q->close();
- $next=giftcode_validate('TEST',2,'2037-01-01T00:00','[{"id":1,"quantity":15,"options":[{"id":50,"param":20},{"id":0,"param":0}]},{"id":2,"quantity":1,"options":[]}]');
+ $next=giftcode_validate('TEST',2,'2037-01-01T00:00','[{"id":1,"quantity":15,"options":[{"id":50,"param":20},{"id":0,"param":0},{"id":95,"param":5}]},{"id":2,"quantity":1,"options":[]}]');
  admin_catalog_transaction(fn()=>giftcode_update($conn,$id,$next,$fp),'RELOAD_GIFTCODE',['code'=>'TEST','catalog_patch'=>['version'=>2]],admin_new_request_id());
  expect_rejection(fn()=>admin_catalog_transaction(fn()=>giftcode_update($conn,$id,$old,$fp),'RELOAD_GIFTCODE',[],admin_new_request_id()),'stale update accepted');
  $row=$conn->query('SELECT * FROM giftcode')->fetch_assoc();$fp=giftcode_fingerprint($row);$before=$row;
- $changed=$next;$changed['detail']='[{"id":1,"quantity":15,"options":[{"id":50,"param":21},{"id":0,"param":0}]}]';
+ $changed=$next;$changed['detail']='[{"id":1,"quantity":15,"options":[{"id":50,"param":21},{"id":0,"param":0},{"id":95,"param":5}]}]';
  expect_rejection(fn()=>admin_catalog_transaction(fn()=>giftcode_update($conn,$id,$changed,$fp),'RELOAD_GIFTCODE',[],admin_new_request_id()),'changed delivered options accepted');
  db_check($conn->query('SELECT * FROM giftcode')->fetch_assoc()===$before,'rejected edit must rollback');
+ // Legacy catalog may already differ from the options delivered to earlier claimants.
+ $q=$conn->prepare('UPDATE giftcode SET detail=? WHERE id=?');$q->bind_param('si',$changed['detail'],$id);$q->execute();$q->close();
+ $row=$conn->query('SELECT * FROM giftcode')->fetch_assoc();$fp=giftcode_fingerprint($row);
+ $sameCurrent=giftcode_validate('TEST',3,'2037-01-01T00:00',$changed['detail']);
+ admin_catalog_transaction(fn()=>giftcode_update($conn,$id,$sameCurrent,$fp),'RELOAD_GIFTCODE',[],admin_new_request_id());
+ $row=$conn->query('SELECT * FROM giftcode')->fetch_assoc();$fp=giftcode_fingerprint($row);
+ $changeAgain=$sameCurrent;$changeAgain['detail']='[{"id":1,"quantity":15,"options":[{"id":50,"param":22},{"id":0,"param":0},{"id":95,"param":5}]}]';
+ expect_rejection(fn()=>admin_catalog_transaction(fn()=>giftcode_update($conn,$id,$changeAgain,$fp),'RELOAD_GIFTCODE',[],admin_new_request_id()),'new option change accepted after legacy mismatch');
  $conn->query('UPDATE giftcode SET count_left=1');
  expect_rejection(fn()=>admin_catalog_transaction(fn()=>giftcode_update($conn,$id,$next,$fp),'RELOAD_GIFTCODE',[],admin_new_request_id()),'claim quota overwrite accepted');
  $row=$conn->query('SELECT * FROM giftcode')->fetch_assoc();$fp=giftcode_fingerprint($row);
@@ -39,7 +47,7 @@ try{
  admin_catalog_transaction(fn()=>giftcode_insert($conn,$next),'RELOAD_GIFTCODE',['code'=>'TEST','catalog_patch'=>['version'=>3]],admin_new_request_id());
  $conn->query("INSERT INTO giftcode_claim VALUES(2,'TEST',NULL)");$row=$conn->query('SELECT * FROM giftcode')->fetch_assoc();$id=(int)$row['id'];$fp=giftcode_fingerprint($row);
  expect_rejection(fn()=>admin_catalog_transaction(fn()=>giftcode_update($conn,$id,$next,$fp),'RELOAD_GIFTCODE',[],admin_new_request_id()),'missing historical baseline accepted');
- db_check((int)$conn->query('SELECT COUNT(*) n FROM server_command_queue')->fetch_assoc()['n']===3,'rejected mutations must not queue reload');
+ db_check((int)$conn->query('SELECT COUNT(*) n FROM server_command_queue')->fetch_assoc()['n']===4,'only accepted mutations may queue reload');
  // A catalog validation read establishes an old RR snapshot before recreation.
  // A concurrent first claim and catalog deletion must still protect its options.
  $race=$old;$race['code']='RACE';
@@ -64,6 +72,7 @@ try{
  db_check(str_contains($html,'data-edit-giftcode='),'actual page missing edit');
  db_check(str_contains($html,'&lt;img onerror=alert(1)&gt;'),'catalog item escaped');
  db_check(str_contains($html,'Value 20 &lt;script&gt;alert(1)&lt;/script&gt;'),'catalog options displayed and escaped');
+ db_check(str_contains($html,'giữ nguyên mọi option cũ; có thể thêm option mới'),'option lock policy hint rendered');
  db_check(str_contains($html,'\\u003Cscript\\u003E'),'script bootstrap must encode catalog markup');
  db_check(str_contains($html,'id="optionRows"')&&str_contains($html,'name="expected_fingerprint"'),'editor and conflict fields rendered');
  session_destroy();

@@ -75,12 +75,24 @@ function giftcode_canonical_detail(string $detail,?int $limit=200): array {
 function giftcode_fingerprint(array $row): string {
  return hash('sha256',json_encode([giftcode_canonical($row['code']),giftcode_integer($row['count_left'],-1),giftcode_canonical_detail($row['detail']),$row['expired']],JSON_THROW_ON_ERROR));
 }
-function giftcode_assert_update_options(array $items,array $deliveredDetails): void {
+function giftcode_assert_update_options(array $items,array $deliveredDetails,?array $currentItems=null): void {
  $incoming=[];foreach($items as $item)$incoming[$item['id']]=giftcode_sorted_options($item['options']??[]);
+ $current=[];foreach($currentItems??[] as $item)$current[$item['id']]=giftcode_sorted_options($item['options']??[]);
  foreach($deliveredDetails as $detail){
   if($detail===null)throw new InvalidArgumentException('Historical claim has no reward baseline; this code cannot be edited safely');
   foreach(giftcode_canonical_detail($detail,null) as $old){
-   if(isset($incoming[$old['id']])&&$incoming[$old['id']]!==$old['options'])throw new InvalidArgumentException('Cannot change options of previously delivered item #'.$old['id']);
+   // A legacy giftcode may already differ from its old claim snapshots. Preserve
+   // that current configuration while still locking future edits to this item.
+   $baseline=array_key_exists($old['id'],$current)?$current[$old['id']]:$old['options'];
+   if(array_key_exists($old['id'],$incoming)){
+    $receivedById=[];foreach($incoming[$old['id']] as $op)$receivedById[$op['id']]=$op['param'];
+    $preservesDeliveredOptions=true;
+    foreach($baseline as $op){if(!array_key_exists($op['id'],$receivedById)||$receivedById[$op['id']]!==$op['param']){$preservesDeliveredOptions=false;break;}}
+    if($preservesDeliveredOptions)continue;
+    $required=[];foreach($baseline as $op)$required[]='#'.$op['id'].':'.$op['param'];
+    $received=[];foreach($incoming[$old['id']] as $op)$received[]='#'.$op['id'].':'.$op['param'];
+    throw new InvalidArgumentException('Không thể đổi options món #'.$old['id'].' đã phát. Cần giữ: '.($required?implode(' ',$required):'không có option').'; form đang gửi: '.($received?implode(' ',$received):'không có option'));
+   }
   }
  }
 }
@@ -99,7 +111,7 @@ function giftcode_update(mysqli $conn,int $id,array $gift,string $expected): voi
  if(!$row)throw new InvalidArgumentException('Giftcode no longer exists');
  if(!hash_equals(giftcode_fingerprint($row),$expected))throw new InvalidArgumentException('Giftcode or remaining quota changed. Reload the page before editing again');
  if(giftcode_canonical($row['code'])!==$gift['code'])throw new InvalidArgumentException('Giftcode identity cannot change');
- giftcode_assert_update_options(json_decode($gift['detail'],true,512,JSON_THROW_ON_ERROR),giftcode_claim_details($conn,$gift['code']));
+ giftcode_assert_update_options(json_decode($gift['detail'],true,512,JSON_THROW_ON_ERROR),giftcode_claim_details($conn,$gift['code']),giftcode_canonical_detail($row['detail']));
  giftcode_validate_catalog($conn,$gift);
  admin_execute_statement('UPDATE giftcode SET count_left=?,detail=?,expired=? WHERE id=?','issi',[$gift['count'],$gift['detail'],$gift['expired'],$id]);
 }
