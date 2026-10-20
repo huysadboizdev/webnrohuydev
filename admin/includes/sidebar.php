@@ -38,6 +38,9 @@ $active_tab = $active_tab ?? 'dashboard';
         </a>
 
         <div class="nav-section-title">Máy chủ & Gameplay</div>
+        <a href="<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/server.php" class="nav-link <?= $active_tab === 'server' ? 'active' : '' ?>">
+            <span class="nav-icon">🛠️</span><span>Máy chủ / Bảo trì</span>
+        </a>
         <a href="<?= htmlspecialchars(rtrim(admin_url(''), '/'), ENT_QUOTES, 'UTF-8') ?>/admin/events.php" class="nav-link <?= $active_tab === 'events' ? 'active' : '' ?>">
             <span class="nav-icon">🎉</span><span>Sự kiện</span>
         </a>

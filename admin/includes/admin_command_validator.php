@@ -11,6 +11,10 @@ function admin_long_string($value, $signed=false) {
     return $v;
 }
 function validate_admin_command($type, $p) {
+    if (in_array($type, ['MAINTENANCE_START','MAINTENANCE_OPEN'], true)) {
+        if (!is_array($p) || count($p)!==0) throw new InvalidArgumentException('Maintenance commands require an empty payload');
+        return [];
+    }
     if ($type === 'EVENT_SET') {
         $keys=['hung_vuong','summer','halloween','christmas','lunar_new_year','trung_thu','womens_day','teachers_day','valentine','top_up'];
         if (!is_array($p) || array_diff(array_keys($p), ['event_key','enabled','revision']) || count($p)!==3
